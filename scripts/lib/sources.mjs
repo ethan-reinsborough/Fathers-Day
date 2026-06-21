@@ -130,8 +130,12 @@ export function parseHistory(buf) {
         const l = String(r?.[0] ?? "").toLowerCase();
         return needles.every((n) => l.includes(n));
       });
-    const benchRow = findRow("regular unleaded", "benchmark");
-    const maxRow = findRow("regular unleaded", "maximum with delivery");
+    // Match on load-bearing tokens only, so minor NBEUB rewording (e.g. dropping
+    // "Unleaded") doesn't silently drop a whole year. "regular" appears only in
+    // the Regular rows (the French side says "ordinaire"); "delivery" picks the
+    // pump-ceiling row over the delivery-less "Maximum price" (retail) row.
+    const benchRow = findRow("regular", "benchmark");
+    const maxRow = findRow("regular", "maximum", "delivery");
     if (!maxRow) continue;
 
     for (const { col, iso } of dateCols) {
@@ -151,15 +155,28 @@ export function parseHistory(buf) {
 }
 
 export async function fetchHistory(localFallback) {
+  // Try the live download, but a 200-with-changed-markup yields an EMPTY parse
+  // (no exception) — so treat empty as failure and fall back to the bundled
+  // snapshot. Then keep whichever series has more rows, so a partial live parse
+  // (e.g. the current-year sheet broke) never regresses below the snapshot.
+  let live = null;
   try {
-    const buf = await fetchBuffer(NBEUB_XLS);
-    return parseHistory(buf);
-  } catch (e) {
-    if (localFallback && existsSync(localFallback)) {
-      return parseHistory(readFileSync(localFallback));
-    }
-    throw e;
+    live = parseHistory(await fetchBuffer(NBEUB_XLS));
+  } catch {
+    live = null;
   }
+  let local = null;
+  if (localFallback && existsSync(localFallback)) {
+    try {
+      local = parseHistory(readFileSync(localFallback));
+    } catch {
+      local = null;
+    }
+  }
+  const candidates = [live, local].filter((r) => r && r.series.length);
+  if (!candidates.length) throw new Error("No history available (live and fallback both empty).");
+  candidates.sort((a, b) => b.series.length - a.series.length);
+  return candidates[0];
 }
 
 // ---- FRED DGASNYH: NY Harbor conventional gasoline spot (USD/gal), daily ----

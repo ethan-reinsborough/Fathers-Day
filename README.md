@@ -69,6 +69,12 @@ npm run dev             # http://localhost:5173
 The base path is detected automatically (`/gas-guru/` for a project repo, `/` for a `you.github.io`
 user repo or a custom domain).
 
+> **Heads-up on the schedule:** GitHub pauses *scheduled* workflows after 60 days with no repository
+> activity (and bot commits don't count). If it ever pauses, GitHub emails you — just click **Enable
+> workflow** and it resumes; the app keeps showing the last cached prices until then. For fully
+> hands-off operation, add a fine-grained PAT as a secret named `KEEPALIVE_PAT` and enable the optional
+> `keepalive` job in [`deploy.yml`](.github/workflows/deploy.yml).
+
 ### Keeping actual prices fresh
 
 GasBuddy is behind Cloudflare, which sometimes blocks GitHub's datacenter IPs. The forecast and

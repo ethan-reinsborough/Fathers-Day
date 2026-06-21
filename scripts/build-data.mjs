@@ -42,6 +42,14 @@ async function main() {
   ]);
 
   if (!history || !history.series.length) throw new Error("No history — cannot build.");
+  // Loud signal if the parsed history looks stale — almost always means NBEUB
+  // changed its spreadsheet labels and our row-matching silently missed rows.
+  const ageDays = (Date.now() - Date.parse(history.latestDate)) / 86400000;
+  if (ageDays > 14)
+    console.warn(
+      `⚠ history latestDate ${history.latestDate} is ${Math.round(ageDays)} days old — ` +
+        `NBEUB xls labels may have changed; forecast baseline could be stale.`
+    );
   // If the live HTML scrape failed, fall back to the latest xls row.
   const reg = regulated || {
     regularSelfServe: history.series.at(-1).regular,

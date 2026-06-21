@@ -10,8 +10,14 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# NOTE: GitHub disables scheduled workflows after 60 days with no repository
+# activity. Commits pushed by GITHUB_TOKEN (the bot below) do NOT reset that
+# timer — only a real user does. So after ~60 idle days the cron pauses and the
+# app shows last-cached prices until you re-enable it (GitHub emails you; click
+# "Enable workflow"). For fully hands-off operation, add a fine-grained PAT as a
+# secret named KEEPALIVE_PAT and enable the optional "keepalive" job below.
 permissions:
-  contents: write # commit refreshed data (also keeps scheduled workflows alive)
+  contents: write # commit the refreshed data files back to the repo
   pages: write
   id-token: write
 
@@ -59,6 +65,7 @@ jobs:
         run: npm run build
 
       - name: Commit refreshed data
+        continue-on-error: true # a failed push must never block the deploy below
         run: |
           git config user.name "gas-guru-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -67,7 +74,11 @@ jobs:
             echo "No data changes."
           else
             git commit -m "data: refresh $(date -u +%FT%TZ) [skip ci]"
-            git push
+            # Rebase + retry so an overlapping push can't cause a non-fast-forward fail.
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push origin HEAD:main && break
+              echo "push attempt $i failed; retrying"; sleep 5
+            done
           fi
 
       - uses: actions/configure-pages@v5
@@ -75,3 +86,15 @@ jobs:
         with:
           path: dist
       - uses: actions/deploy-pages@v4
+
+  # OPTIONAL — keeps the schedule alive past 60 idle days, fully hands-off.
+  # To enable: create a fine-grained PAT (Actions: read/write on this repo),
+  # save it as a repo secret named KEEPALIVE_PAT, and delete the `if: false`.
+  keepalive:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-enable this workflow weekly
+        env:
+          GH_TOKEN: ${{ secrets.KEEPALIVE_PAT }}
+        run: gh workflow enable "Update prices & deploy" --repo "${{ github.repository }}"

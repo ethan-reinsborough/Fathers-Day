@@ -103,7 +103,12 @@ export function predict({ regulated, history, benchmark, today }) {
 
   const direction = deltaCents > 0.15 ? "up" : deltaCents < -0.15 ? "down" : "flat";
 
-  const nextChange = nextFriday(today > D0 ? today : D0);
+  // Anchor on the Atlantic calendar date: the NBEUB cycle is defined in
+  // America/Moncton, so a run between UTC-midnight Friday and the 12:01am-AT
+  // reset is still "last week" until the new xls row publishes. Comparing the
+  // raw UTC instant to a UTC-midnight date here would skip a week.
+  const atlISO = today.toLocaleDateString("en-CA", { timeZone: "America/Moncton" });
+  const nextChange = nextFriday(atlISO > effectiveISO ? toDate(atlISO) : D0);
 
   return {
     nextChangeDate: toISO(nextChange),
