@@ -1,0 +1,17 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+.DS_Store
+Thumbs.db
+
+# scratch / generated probe artifacts
+seed/*.png
+seed/*.log
+seed/*.html
+seed/_*.mjs
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/

@@ -1,0 +1,77 @@
+name: Update prices & deploy
+
+on:
+  # Times are UTC. New Brunswick is Atlantic (UTC-3 in summer).
+  # Prices reset Fridays 12:01 AM Atlantic, with mid-week "interrupter" changes.
+  schedule:
+    - cron: "12 4 * * *" # ~01:12 Atlantic — catch the Friday reset & overnight interrupters
+    - cron: "12 16 * * *" # ~13:12 Atlantic — midday interrupter check
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit refreshed data (also keeps scheduled workflows alive)
+  pages: write
+  id-token: write
+
+concurrency:
+  group: gas-guru-pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Compute base path
+        id: base
+        run: |
+          repo="${GITHUB_REPOSITORY#*/}"
+          if [[ "$repo" == *.github.io ]]; then
+            echo "path=/" >> "$GITHUB_OUTPUT"
+          else
+            echo "path=/$repo/" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build regulated prices + forecast (NBEUB, FRED, Bank of Canada)
+        run: npm run data
+
+      - name: Install Chromium (for actual station prices)
+        run: npx playwright install --with-deps chromium
+        continue-on-error: true
+
+      - name: Scrape actual pump prices — best effort, never fails the build
+        run: npm run data:stations
+        continue-on-error: true
+
+      - name: Build site
+        env:
+          BASE_PATH: ${{ steps.base.outputs.path }}
+        run: npm run build
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "gas-guru-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --staged --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: refresh $(date -u +%FT%TZ) [skip ci]"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
