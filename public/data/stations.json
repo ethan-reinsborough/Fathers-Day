@@ -1,28 +1,14 @@
 {
-  "generatedAt": "2026-06-21T06:41:45.780Z",
-  "lastLiveAt": "2026-06-21T06:41:45.780Z",
+  "generatedAt": "2026-06-21T17:53:31.611Z",
+  "lastLiveAt": "2026-06-21T17:53:31.611Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 167.4,
   "highestRegular": 167.4,
-  "count": 3,
+  "count": 4,
   "stations": [
-    {
-      "id": "54601",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "201 Restigouche Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 167.4,
-      "midgrade": 180.9,
-      "premium": 190,
-      "diesel": 201.3,
-      "postedAt": "2026-06-20T14:52:09.463Z"
-    },
     {
       "id": "17589",
       "name": "Esso",
@@ -35,7 +21,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-06-20T20:58:57.724Z"
+      "postedAt": "2026-06-21T16:27:00.872Z"
     },
     {
       "id": "107589",
@@ -49,7 +35,35 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-06-20T20:59:06.992Z"
+      "postedAt": "2026-06-21T16:27:02.619Z"
+    },
+    {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 167.4,
+      "midgrade": 174.9,
+      "premium": 182.9,
+      "diesel": 198.4,
+      "postedAt": "2026-06-21T14:37:03.333Z"
+    },
+    {
+      "id": "54601",
+      "name": "Shell",
+      "brand": "Shell",
+      "address": "201 Restigouche Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 167.4,
+      "midgrade": null,
+      "premium": 198.9,
+      "diesel": 198.9,
+      "postedAt": "2026-06-21T16:33:58.158Z"
     }
   ]
 }
