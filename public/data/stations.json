@@ -1,13 +1,10 @@
 {
-  "generatedAt": "2026-06-22T10:19:30.517Z",
-  "lastLiveAt": "2026-06-22T10:19:30.517Z",
+  "generatedAt": "2026-06-22T19:44:58.609Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
-  "stale": false,
-  "lowestRegular": 167.4,
-  "highestRegular": 167.4,
-  "count": 5,
+  "stale": true,
+  "staleReason": "no stations captured (Cloudflare block or no data)",
   "stations": [
     {
       "id": "107589",
@@ -79,5 +76,7 @@
       "diesel": null,
       "postedAt": "2026-06-22T00:02:36.309Z"
     }
-  ]
+  ],
+  "lowestRegular": 167.4,
+  "lastLiveAt": "2026-06-22T10:19:30.517Z"
 }
