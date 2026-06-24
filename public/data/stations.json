@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-23T18:13:50.791Z",
-  "lastLiveAt": "2026-06-23T18:13:50.791Z",
+  "generatedAt": "2026-06-24T07:58:07.647Z",
+  "lastLiveAt": "2026-06-24T07:58:07.647Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 163.9,
   "highestRegular": 169.9,
-  "count": 16,
+  "count": 13,
   "stations": [
     {
       "id": "140184",
@@ -24,20 +24,6 @@
       "postedAt": "2026-06-23T17:05:12.361Z"
     },
     {
-      "id": "200261",
-      "name": "Two Nations One Stop",
-      "brand": null,
-      "address": "Howe St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 167.4,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-06-22T00:34:09.197Z"
-    },
-    {
       "id": "107634",
       "name": "Canadian Tire",
       "brand": "Canadian Tire",
@@ -50,6 +36,20 @@
       "premium": null,
       "diesel": null,
       "postedAt": "2026-06-23T18:00:08.276Z"
+    },
+    {
+      "id": "54578",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1169 Regent St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 169.1,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-06-23T16:57:03.209Z"
     },
     {
       "id": "54579",
@@ -66,18 +66,18 @@
       "postedAt": "2026-06-23T18:01:39.035Z"
     },
     {
-      "id": "54578",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1169 Regent St",
+      "id": "140593",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "530 Brookside Dr",
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
-      "regular": 169.1,
+      "regular": 169.2,
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-06-23T16:57:03.209Z"
+      "postedAt": "2026-06-23T19:09:01.419Z"
     },
     {
       "id": "114537",
@@ -122,20 +122,6 @@
       "postedAt": "2026-06-23T17:12:14.350Z"
     },
     {
-      "id": "140593",
-      "name": "Sobeys Fast Fuel",
-      "brand": null,
-      "address": "530 Brookside Dr",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 169.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-06-22T13:46:14.918Z"
-    },
-    {
       "id": "85894",
       "name": "Irving",
       "brand": "Irving",
@@ -164,6 +150,20 @@
       "postedAt": "2026-06-23T11:34:39.323Z"
     },
     {
+      "id": "126321",
+      "name": "Shell",
+      "brand": "Shell",
+      "address": "325 Sunset Dr E",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 169.4,
+      "midgrade": 178.9,
+      "premium": 187.9,
+      "diesel": 200.4,
+      "postedAt": "2026-06-23T18:16:17.061Z"
+    },
+    {
       "id": "174919",
       "name": "Irving",
       "brand": "Irving",
@@ -190,48 +190,6 @@
       "premium": null,
       "diesel": 201.8,
       "postedAt": "2026-06-22T23:37:21.129Z"
-    },
-    {
-      "id": "85893",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "562 Riverside Dr",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 169.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-06-21T19:51:08.818Z"
-    },
-    {
-      "id": "85892",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "536 Riverside Dr",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 169.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-06-21T19:50:58.078Z"
-    },
-    {
-      "id": "85897",
-      "name": "Ultramar",
-      "brand": "Irving",
-      "address": "623 Union St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 169.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-06-21T18:31:48.226Z"
     }
   ]
 }
