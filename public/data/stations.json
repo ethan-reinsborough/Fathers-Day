@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-24T18:16:59.205Z",
-  "lastLiveAt": "2026-06-24T18:16:59.205Z",
+  "generatedAt": "2026-06-25T07:59:04.059Z",
+  "lastLiveAt": "2026-06-25T07:59:04.059Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 163.9,
   "highestRegular": 169.9,
-  "count": 13,
+  "count": 14,
   "stations": [
     {
       "id": "140184",
@@ -21,7 +21,7 @@
       "midgrade": null,
       "premium": 179.9,
       "diesel": null,
-      "postedAt": "2026-06-23T17:05:12.361Z"
+      "postedAt": "2026-06-24T21:46:12.277Z"
     },
     {
       "id": "107634",
@@ -80,20 +80,6 @@
       "postedAt": "2026-06-23T19:09:01.419Z"
     },
     {
-      "id": "195009",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1201 Hanwell Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 169.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 200.2,
-      "postedAt": "2026-06-23T17:12:14.350Z"
-    },
-    {
       "id": "114537",
       "name": "Irving",
       "brand": "Irving",
@@ -106,6 +92,20 @@
       "premium": null,
       "diesel": 200.2,
       "postedAt": "2026-06-23T17:13:12.375Z"
+    },
+    {
+      "id": "195009",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1201 Hanwell Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 169.2,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 200.2,
+      "postedAt": "2026-06-23T17:12:14.350Z"
     },
     {
       "id": "126284",
@@ -164,6 +164,34 @@
       "postedAt": "2026-06-23T11:36:47.860Z"
     },
     {
+      "id": "117960",
+      "name": "Ultramar",
+      "brand": "Ultramar",
+      "address": "247 Canada St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 169.9,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-06-25T01:05:38.360Z"
+    },
+    {
+      "id": "85898",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "253 Canada St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 169.9,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-06-25T01:05:24.085Z"
+    },
+    {
       "id": "174919",
       "name": "Irving",
       "brand": "Irving",
@@ -176,20 +204,6 @@
       "premium": null,
       "diesel": 200.8,
       "postedAt": "2026-06-23T17:09:40.637Z"
-    },
-    {
-      "id": "129747",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1759 Lincoln Rd",
-      "locality": "Lincoln",
-      "lat": null,
-      "lng": null,
-      "regular": 169.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 201.8,
-      "postedAt": "2026-06-22T23:37:21.129Z"
     }
   ]
 }
