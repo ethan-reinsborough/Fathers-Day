@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-27T07:31:38.839Z",
-  "lastLiveAt": "2026-06-27T07:31:38.839Z",
+  "generatedAt": "2026-06-27T17:25:39.606Z",
+  "lastLiveAt": "2026-06-27T17:25:39.606Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 163.9,
   "highestRegular": 173.1,
-  "count": 13,
+  "count": 14,
   "stations": [
     {
       "id": "140184",
@@ -78,6 +78,20 @@
       "premium": null,
       "diesel": null,
       "postedAt": "2026-06-26T23:05:34.689Z"
+    },
+    {
+      "id": "54579",
+      "name": "Petro-Canada",
+      "brand": "Petro-Canada",
+      "address": "939 Prospect St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 170.8,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-06-27T15:37:35.232Z"
     },
     {
       "id": "85894",
