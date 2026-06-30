@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-29T18:24:56.862Z",
-  "lastLiveAt": "2026-06-29T18:24:56.862Z",
+  "generatedAt": "2026-06-30T08:06:26.414Z",
+  "lastLiveAt": "2026-06-30T08:06:26.414Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
@@ -21,7 +21,7 @@
       "midgrade": null,
       "premium": 179.9,
       "diesel": null,
-      "postedAt": "2026-06-29T16:42:58.406Z"
+      "postedAt": "2026-06-29T23:49:16.818Z"
     },
     {
       "id": "85898",
@@ -63,21 +63,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-06-29T16:48:01.116Z"
-    },
-    {
-      "id": "85904",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1190 Smythe St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 170.8,
-      "midgrade": 181.8,
-      "premium": 191.6,
-      "diesel": 197.1,
-      "postedAt": "2026-06-29T16:42:44.450Z"
+      "postedAt": "2026-06-29T23:48:42.440Z"
     },
     {
       "id": "54578",
@@ -91,7 +77,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-06-29T16:49:00.671Z"
+      "postedAt": "2026-06-29T23:48:19.503Z"
+    },
+    {
+      "id": "85904",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1190 Smythe St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 170.8,
+      "midgrade": 181.8,
+      "premium": 191.6,
+      "diesel": 197.1,
+      "postedAt": "2026-06-29T23:48:01.856Z"
     },
     {
       "id": "54579",
@@ -105,7 +105,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-06-29T16:48:20.930Z"
+      "postedAt": "2026-06-29T23:48:24.995Z"
     },
     {
       "id": "85894",
@@ -122,20 +122,6 @@
       "postedAt": "2026-06-29T16:48:16.472Z"
     },
     {
-      "id": "126321",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "325 Sunset Dr E",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 171.3,
-      "midgrade": 178.9,
-      "premium": 187.9,
-      "diesel": 200.4,
-      "postedAt": "2026-06-29T16:44:25.878Z"
-    },
-    {
       "id": "85896",
       "name": "Esso",
       "brand": "Esso",
@@ -150,6 +136,20 @@
       "postedAt": "2026-06-29T10:47:51.620Z"
     },
     {
+      "id": "126321",
+      "name": "Shell",
+      "brand": "Shell",
+      "address": "325 Sunset Dr E",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 171.3,
+      "midgrade": 178.9,
+      "premium": 187.9,
+      "diesel": 200.4,
+      "postedAt": "2026-06-29T23:48:55.503Z"
+    },
+    {
       "id": "129747",
       "name": "Irving",
       "brand": "Irving",
@@ -160,8 +160,8 @@
       "regular": 171.9,
       "midgrade": null,
       "premium": null,
-      "diesel": 196.8,
-      "postedAt": "2026-06-29T18:13:12.146Z"
+      "diesel": 196.7,
+      "postedAt": "2026-06-29T19:18:30.387Z"
     },
     {
       "id": "195009",
@@ -175,7 +175,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 202.7,
-      "postedAt": "2026-06-29T16:48:26.189Z"
+      "postedAt": "2026-06-29T23:49:01.604Z"
     }
   ]
 }
