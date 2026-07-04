@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-03T17:47:50.907Z",
-  "lastLiveAt": "2026-07-03T17:47:50.907Z",
+  "generatedAt": "2026-07-04T07:18:28.225Z",
+  "lastLiveAt": "2026-07-04T07:18:28.225Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 166.9,
-  "highestRegular": 176,
-  "count": 14,
+  "highestRegular": 175.3,
+  "count": 12,
   "stations": [
     {
       "id": "140184",
@@ -22,20 +22,6 @@
       "premium": 184.9,
       "diesel": null,
       "postedAt": "2026-07-03T16:45:21.520Z"
-    },
-    {
-      "id": "54577",
-      "name": "CO-OP",
-      "brand": "CO-OP",
-      "address": "170 Doak Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 170.5,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-01T22:05:49.382Z"
     },
     {
       "id": "107634",
@@ -63,21 +49,7 @@
       "midgrade": 181.2,
       "premium": 191,
       "diesel": 202,
-      "postedAt": "2026-07-03T16:03:58.139Z"
-    },
-    {
-      "id": "85904",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1190 Smythe St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 170.8,
-      "midgrade": 181.8,
-      "premium": 191.6,
-      "diesel": 197.1,
-      "postedAt": "2026-07-03T16:03:48.674Z"
+      "postedAt": "2026-07-03T17:50:48.985Z"
     },
     {
       "id": "174919",
@@ -91,7 +63,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": 195.2,
-      "postedAt": "2026-07-03T16:03:40.357Z"
+      "postedAt": "2026-07-03T19:26:08.749Z"
+    },
+    {
+      "id": "195009",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1201 Hanwell Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 171.3,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 202.7,
+      "postedAt": "2026-07-03T23:48:09.274Z"
     },
     {
       "id": "114537",
@@ -105,7 +91,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 204.3,
-      "postedAt": "2026-07-03T16:04:39.998Z"
+      "postedAt": "2026-07-04T03:20:46.371Z"
     },
     {
       "id": "126321",
@@ -122,34 +108,6 @@
       "postedAt": "2026-07-02T23:42:38.850Z"
     },
     {
-      "id": "195009",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1201 Hanwell Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 171.3,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 202.7,
-      "postedAt": "2026-07-03T02:33:33.411Z"
-    },
-    {
-      "id": "107630",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "396 Lincoln Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 171.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-02T02:43:08.672Z"
-    },
-    {
       "id": "126284",
       "name": "Esso",
       "brand": "Esso",
@@ -161,7 +119,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": 196.1,
-      "postedAt": "2026-07-03T16:03:34.002Z"
+      "postedAt": "2026-07-04T03:23:07.004Z"
+    },
+    {
+      "id": "85904",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1190 Smythe St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175,
+      "midgrade": 181.8,
+      "premium": 191.6,
+      "diesel": 197.1,
+      "postedAt": "2026-07-03T20:07:02.220Z"
     },
     {
       "id": "54578",
@@ -185,11 +157,11 @@
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
-      "regular": 176,
+      "regular": 175.3,
       "midgrade": null,
       "premium": null,
       "diesel": 202.7,
-      "postedAt": "2026-07-03T11:34:32.555Z"
+      "postedAt": "2026-07-03T21:48:33.445Z"
     },
     {
       "id": "85896",
@@ -199,11 +171,11 @@
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
-      "regular": 176,
+      "regular": 175.3,
       "midgrade": null,
       "premium": null,
-      "diesel": 202.7,
-      "postedAt": "2026-07-03T11:07:04.780Z"
+      "diesel": 201.9,
+      "postedAt": "2026-07-03T21:48:32.925Z"
     }
   ]
 }
