@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-04T07:18:28.225Z",
-  "lastLiveAt": "2026-07-04T07:18:28.225Z",
+  "generatedAt": "2026-07-04T17:21:58.607Z",
+  "lastLiveAt": "2026-07-04T17:21:58.607Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 166.9,
-  "highestRegular": 175.3,
-  "count": 12,
+  "highestRegular": 176.2,
+  "count": 14,
   "stations": [
     {
       "id": "140184",
@@ -21,21 +21,7 @@
       "midgrade": null,
       "premium": 184.9,
       "diesel": null,
-      "postedAt": "2026-07-03T16:45:21.520Z"
-    },
-    {
-      "id": "107634",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "1025 Prospect St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 170.8,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-03T02:33:28.224Z"
+      "postedAt": "2026-07-04T11:06:01.867Z"
     },
     {
       "id": "54579",
@@ -50,48 +36,6 @@
       "premium": 191,
       "diesel": 202,
       "postedAt": "2026-07-03T17:50:48.985Z"
-    },
-    {
-      "id": "174919",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1735 NB-640",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 171.3,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 195.2,
-      "postedAt": "2026-07-03T19:26:08.749Z"
-    },
-    {
-      "id": "195009",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1201 Hanwell Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 171.3,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 202.7,
-      "postedAt": "2026-07-03T23:48:09.274Z"
-    },
-    {
-      "id": "114537",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "30 Lian St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 171.3,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 204.3,
-      "postedAt": "2026-07-04T03:20:46.371Z"
     },
     {
       "id": "126321",
@@ -119,7 +63,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": 196.1,
-      "postedAt": "2026-07-04T03:23:07.004Z"
+      "postedAt": "2026-07-04T16:48:33.781Z"
+    },
+    {
+      "id": "107634",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "1025 Prospect St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-04T16:42:41.855Z"
     },
     {
       "id": "85904",
@@ -150,18 +108,32 @@
       "postedAt": "2026-07-03T14:31:06.397Z"
     },
     {
-      "id": "85894",
+      "id": "174919",
       "name": "Irving",
       "brand": "Irving",
-      "address": "95 Main St",
+      "address": "1735 NB-640",
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
-      "regular": 175.3,
+      "regular": 175.2,
+      "midgrade": 187,
+      "premium": 197.4,
+      "diesel": 202.1,
+      "postedAt": "2026-07-04T11:57:56.073Z"
+    },
+    {
+      "id": "114537",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "30 Lian St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.2,
       "midgrade": null,
       "premium": null,
-      "diesel": 202.7,
-      "postedAt": "2026-07-03T21:48:33.445Z"
+      "diesel": 204.3,
+      "postedAt": "2026-07-04T14:54:03.828Z"
     },
     {
       "id": "85896",
@@ -176,6 +148,62 @@
       "premium": null,
       "diesel": 201.9,
       "postedAt": "2026-07-03T21:48:32.925Z"
+    },
+    {
+      "id": "85894",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "95 Main St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.3,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 202.7,
+      "postedAt": "2026-07-03T21:48:33.445Z"
+    },
+    {
+      "id": "85897",
+      "name": "Ultramar",
+      "brand": "Irving",
+      "address": "623 Union St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.3,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-04T10:11:36.239Z"
+    },
+    {
+      "id": "129747",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1759 Lincoln Rd",
+      "locality": "Lincoln",
+      "lat": null,
+      "lng": null,
+      "regular": 175.9,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 202.9,
+      "postedAt": "2026-07-04T14:28:01.846Z"
+    },
+    {
+      "id": "195009",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1201 Hanwell Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 176.2,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 202.7,
+      "postedAt": "2026-07-04T14:39:33.269Z"
     }
   ]
 }
