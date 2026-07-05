@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-05T07:41:25.817Z",
-  "lastLiveAt": "2026-07-05T07:41:25.817Z",
+  "generatedAt": "2026-07-05T17:28:55.415Z",
+  "lastLiveAt": "2026-07-05T17:28:55.415Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 166.9,
   "highestRegular": 176.2,
-  "count": 13,
+  "count": 15,
   "stations": [
     {
       "id": "140184",
@@ -21,7 +21,7 @@
       "midgrade": null,
       "premium": 184.9,
       "diesel": null,
-      "postedAt": "2026-07-04T20:49:54.825Z"
+      "postedAt": "2026-07-05T15:54:55.230Z"
     },
     {
       "id": "54579",
@@ -48,8 +48,8 @@
       "regular": 172,
       "midgrade": null,
       "premium": null,
-      "diesel": 196.1,
-      "postedAt": "2026-07-05T03:18:57.486Z"
+      "diesel": 201.7,
+      "postedAt": "2026-07-05T17:22:53.873Z"
     },
     {
       "id": "107634",
@@ -66,6 +66,20 @@
       "postedAt": "2026-07-04T16:42:41.855Z"
     },
     {
+      "id": "54578",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1169 Regent St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-05T15:47:00.356Z"
+    },
+    {
       "id": "85904",
       "name": "Esso",
       "brand": "Esso",
@@ -80,20 +94,6 @@
       "postedAt": "2026-07-03T20:07:02.220Z"
     },
     {
-      "id": "54578",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1169 Regent St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.1,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-03T14:31:06.397Z"
-    },
-    {
       "id": "174919",
       "name": "Irving",
       "brand": "Irving",
@@ -105,7 +105,7 @@
       "midgrade": 187,
       "premium": 197.4,
       "diesel": 202.1,
-      "postedAt": "2026-07-04T11:57:56.073Z"
+      "postedAt": "2026-07-05T15:45:15.522Z"
     },
     {
       "id": "114537",
@@ -133,7 +133,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-05T00:42:50.226Z"
+      "postedAt": "2026-07-05T16:29:21.355Z"
     },
     {
       "id": "85894",
@@ -176,6 +176,34 @@
       "premium": null,
       "diesel": 202.9,
       "postedAt": "2026-07-04T14:28:01.846Z"
+    },
+    {
+      "id": "85898",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "253 Canada St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 176,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-05T17:27:25.993Z"
+    },
+    {
+      "id": "117960",
+      "name": "Ultramar",
+      "brand": "Ultramar",
+      "address": "247 Canada St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 176,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-05T17:27:05.967Z"
     },
     {
       "id": "195009",
