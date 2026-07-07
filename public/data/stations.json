@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-06T18:24:11.057Z",
-  "lastLiveAt": "2026-07-06T18:24:11.057Z",
+  "generatedAt": "2026-07-07T07:56:43.886Z",
+  "lastLiveAt": "2026-07-07T07:56:43.886Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 166.9,
   "highestRegular": 176,
-  "count": 11,
+  "count": 12,
   "stations": [
     {
       "id": "140184",
@@ -21,7 +21,7 @@
       "midgrade": null,
       "premium": 184.9,
       "diesel": null,
-      "postedAt": "2026-07-06T18:02:40.909Z"
+      "postedAt": "2026-07-06T20:16:44.541Z"
     },
     {
       "id": "126284",
@@ -35,7 +35,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 201.7,
-      "postedAt": "2026-07-06T14:50:29.528Z"
+      "postedAt": "2026-07-07T02:51:38.344Z"
     },
     {
       "id": "54579",
@@ -49,7 +49,21 @@
       "midgrade": 185.7,
       "premium": 196,
       "diesel": 202,
-      "postedAt": "2026-07-05T18:44:10.667Z"
+      "postedAt": "2026-07-07T02:59:59.542Z"
+    },
+    {
+      "id": "85904",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1190 Smythe St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175,
+      "midgrade": 181.8,
+      "premium": 191.6,
+      "diesel": 197.1,
+      "postedAt": "2026-07-07T02:52:19.451Z"
     },
     {
       "id": "54578",
@@ -66,6 +80,20 @@
       "postedAt": "2026-07-05T15:47:00.356Z"
     },
     {
+      "id": "114537",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "30 Lian St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.2,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 201.7,
+      "postedAt": "2026-07-07T03:00:01.350Z"
+    },
+    {
       "id": "174919",
       "name": "Irving",
       "brand": "Irving",
@@ -74,10 +102,24 @@
       "lat": null,
       "lng": null,
       "regular": 175.2,
+      "midgrade": 186.3,
+      "premium": 196.6,
+      "diesel": 201.7,
+      "postedAt": "2026-07-06T20:47:44.298Z"
+    },
+    {
+      "id": "195009",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1201 Hanwell Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.2,
       "midgrade": null,
       "premium": null,
-      "diesel": 202.7,
-      "postedAt": "2026-07-05T15:45:15.522Z"
+      "diesel": 201.7,
+      "postedAt": "2026-07-07T02:59:58.574Z"
     },
     {
       "id": "140593",
@@ -94,32 +136,18 @@
       "postedAt": "2026-07-05T18:49:47.534Z"
     },
     {
-      "id": "114537",
-      "name": "Irving",
+      "id": "85897",
+      "name": "Ultramar",
       "brand": "Irving",
-      "address": "30 Lian St",
+      "address": "623 Union St",
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
-      "regular": 175.2,
+      "regular": 176,
       "midgrade": null,
       "premium": null,
-      "diesel": 201.7,
-      "postedAt": "2026-07-06T14:41:05.829Z"
-    },
-    {
-      "id": "195009",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1201 Hanwell Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 201.7,
-      "postedAt": "2026-07-06T14:51:12.870Z"
+      "diesel": null,
+      "postedAt": "2026-07-07T02:59:46.783Z"
     },
     {
       "id": "85898",
@@ -148,20 +176,6 @@
       "premium": null,
       "diesel": null,
       "postedAt": "2026-07-05T17:27:05.967Z"
-    },
-    {
-      "id": "85897",
-      "name": "Ultramar",
-      "brand": "Irving",
-      "address": "623 Union St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 176,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-06T15:15:31.050Z"
     }
   ]
 }
