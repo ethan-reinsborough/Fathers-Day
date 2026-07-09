@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-08T17:54:09.925Z",
-  "lastLiveAt": "2026-07-08T17:54:09.925Z",
+  "generatedAt": "2026-07-09T08:03:31.959Z",
+  "lastLiveAt": "2026-07-09T08:03:31.959Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 172,
   "highestRegular": 176,
-  "count": 11,
+  "count": 13,
   "stations": [
     {
       "id": "126284",
@@ -35,7 +35,7 @@
       "midgrade": null,
       "premium": 184.9,
       "diesel": null,
-      "postedAt": "2026-07-08T11:58:33.573Z"
+      "postedAt": "2026-07-09T01:58:26.185Z"
     },
     {
       "id": "107634",
@@ -52,20 +52,6 @@
       "postedAt": "2026-07-08T03:12:16.502Z"
     },
     {
-      "id": "54578",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1169 Regent St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-08T03:11:44.504Z"
-    },
-    {
       "id": "54579",
       "name": "Petro-Canada",
       "brand": "Petro-Canada",
@@ -77,7 +63,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": 202,
-      "postedAt": "2026-07-08T14:05:47.357Z"
+      "postedAt": "2026-07-08T22:19:20.463Z"
+    },
+    {
+      "id": "54578",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1169 Regent St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-09T02:15:05.238Z"
     },
     {
       "id": "85904",
@@ -91,7 +91,7 @@
       "midgrade": 181.8,
       "premium": 191.6,
       "diesel": 197.1,
-      "postedAt": "2026-07-08T14:05:28.489Z"
+      "postedAt": "2026-07-08T22:19:15.306Z"
     },
     {
       "id": "174919",
@@ -105,21 +105,7 @@
       "midgrade": 186.3,
       "premium": 196.6,
       "diesel": 201.7,
-      "postedAt": "2026-07-08T14:05:53.577Z"
-    },
-    {
-      "id": "140593",
-      "name": "Sobeys Fast Fuel",
-      "brand": null,
-      "address": "530 Brookside Dr",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-07T20:57:50.716Z"
+      "postedAt": "2026-07-08T22:19:31.508Z"
     },
     {
       "id": "195009",
@@ -136,18 +122,60 @@
       "postedAt": "2026-07-08T03:12:26.252Z"
     },
     {
-      "id": "114537",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "30 Lian St",
+      "id": "140593",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "530 Brookside Dr",
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
       "regular": 175.2,
       "midgrade": null,
       "premium": null,
-      "diesel": 201.7,
-      "postedAt": "2026-07-07T03:00:01.350Z"
+      "diesel": null,
+      "postedAt": "2026-07-07T20:57:50.716Z"
+    },
+    {
+      "id": "126885",
+      "name": "Petro-Canada",
+      "brand": "Petro-Canada",
+      "address": "20 Royal Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.3,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-08T18:12:42.640Z"
+    },
+    {
+      "id": "126321",
+      "name": "Shell",
+      "brand": "Shell",
+      "address": "325 Sunset Dr E",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.3,
+      "midgrade": 186.1,
+      "premium": 196.1,
+      "diesel": 201.9,
+      "postedAt": "2026-07-08T22:19:24.529Z"
+    },
+    {
+      "id": "129747",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1759 Lincoln Rd",
+      "locality": "Lincoln",
+      "lat": null,
+      "lng": null,
+      "regular": 175.9,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 202.9,
+      "postedAt": "2026-07-08T18:06:22.157Z"
     },
     {
       "id": "85897",
