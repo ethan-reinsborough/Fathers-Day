@@ -1,28 +1,14 @@
 {
-  "generatedAt": "2026-07-09T08:03:31.959Z",
-  "lastLiveAt": "2026-07-09T08:03:31.959Z",
+  "generatedAt": "2026-07-09T18:11:07.967Z",
+  "lastLiveAt": "2026-07-09T18:11:07.967Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
-  "lowestRegular": 172,
+  "lowestRegular": 173.9,
   "highestRegular": 176,
-  "count": 13,
+  "count": 14,
   "stations": [
-    {
-      "id": "126284",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1715 Woodstock Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 172,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-08T03:10:18.121Z"
-    },
     {
       "id": "140184",
       "name": "Costco",
@@ -33,23 +19,9 @@
       "lng": null,
       "regular": 173.9,
       "midgrade": null,
-      "premium": 184.9,
+      "premium": 186.9,
       "diesel": null,
-      "postedAt": "2026-07-09T01:58:26.185Z"
-    },
-    {
-      "id": "107634",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "1025 Prospect St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-08T03:12:16.502Z"
+      "postedAt": "2026-07-09T16:06:15.970Z"
     },
     {
       "id": "54579",
@@ -77,7 +49,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-09T02:15:05.238Z"
+      "postedAt": "2026-07-09T15:58:20.976Z"
     },
     {
       "id": "85904",
@@ -94,6 +66,20 @@
       "postedAt": "2026-07-08T22:19:15.306Z"
     },
     {
+      "id": "107634",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "1025 Prospect St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-08T03:12:16.502Z"
+    },
+    {
       "id": "174919",
       "name": "Irving",
       "brand": "Irving",
@@ -106,6 +92,20 @@
       "premium": 196.6,
       "diesel": 201.7,
       "postedAt": "2026-07-08T22:19:31.508Z"
+    },
+    {
+      "id": "126284",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1715 Woodstock Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.2,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-09T17:05:16.657Z"
     },
     {
       "id": "195009",
@@ -136,6 +136,20 @@
       "postedAt": "2026-07-07T20:57:50.716Z"
     },
     {
+      "id": "85894",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "95 Main St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.3,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 201.9,
+      "postedAt": "2026-07-09T17:57:02.746Z"
+    },
+    {
       "id": "126885",
       "name": "Petro-Canada",
       "brand": "Petro-Canada",
@@ -147,7 +161,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-08T18:12:42.640Z"
+      "postedAt": "2026-07-09T17:58:08.120Z"
     },
     {
       "id": "126321",
@@ -161,7 +175,7 @@
       "midgrade": 186.1,
       "premium": 196.1,
       "diesel": 201.9,
-      "postedAt": "2026-07-08T22:19:24.529Z"
+      "postedAt": "2026-07-09T17:59:07.652Z"
     },
     {
       "id": "129747",
@@ -175,7 +189,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 202.9,
-      "postedAt": "2026-07-08T18:06:22.157Z"
+      "postedAt": "2026-07-09T13:51:53.754Z"
     },
     {
       "id": "85897",
