@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-09T18:11:07.967Z",
-  "lastLiveAt": "2026-07-09T18:11:07.967Z",
+  "generatedAt": "2026-07-10T07:55:39.112Z",
+  "lastLiveAt": "2026-07-10T07:55:39.112Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 173.9,
   "highestRegular": 176,
-  "count": 14,
+  "count": 13,
   "stations": [
     {
       "id": "140184",
@@ -21,21 +21,7 @@
       "midgrade": null,
       "premium": 186.9,
       "diesel": null,
-      "postedAt": "2026-07-09T16:06:15.970Z"
-    },
-    {
-      "id": "54579",
-      "name": "Petro-Canada",
-      "brand": "Petro-Canada",
-      "address": "939 Prospect St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 202,
-      "postedAt": "2026-07-08T22:19:20.463Z"
+      "postedAt": "2026-07-09T22:10:34.612Z"
     },
     {
       "id": "54578",
@@ -46,10 +32,10 @@
       "lat": null,
       "lng": null,
       "regular": 175,
-      "midgrade": null,
-      "premium": null,
+      "midgrade": 186.3,
+      "premium": 196.6,
       "diesel": null,
-      "postedAt": "2026-07-09T15:58:20.976Z"
+      "postedAt": "2026-07-09T23:48:27.871Z"
     },
     {
       "id": "85904",
@@ -63,21 +49,35 @@
       "midgrade": 181.8,
       "premium": 191.6,
       "diesel": 197.1,
-      "postedAt": "2026-07-08T22:19:15.306Z"
+      "postedAt": "2026-07-10T02:32:46.480Z"
     },
     {
-      "id": "107634",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "1025 Prospect St",
+      "id": "54579",
+      "name": "Petro-Canada",
+      "brand": "Petro-Canada",
+      "address": "939 Prospect St",
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
       "regular": 175,
       "midgrade": null,
       "premium": null,
+      "diesel": 202,
+      "postedAt": "2026-07-09T19:34:13.259Z"
+    },
+    {
+      "id": "107630",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "396 Lincoln Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.1,
+      "midgrade": null,
+      "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-08T03:12:16.502Z"
+      "postedAt": "2026-07-09T23:48:38.656Z"
     },
     {
       "id": "174919",
@@ -91,7 +91,21 @@
       "midgrade": 186.3,
       "premium": 196.6,
       "diesel": 201.7,
-      "postedAt": "2026-07-08T22:19:31.508Z"
+      "postedAt": "2026-07-09T23:48:08.183Z"
+    },
+    {
+      "id": "140593",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "530 Brookside Dr",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 175.2,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-09T20:08:30.210Z"
     },
     {
       "id": "126284",
@@ -106,34 +120,6 @@
       "premium": null,
       "diesel": null,
       "postedAt": "2026-07-09T17:05:16.657Z"
-    },
-    {
-      "id": "195009",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1201 Hanwell Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 201.7,
-      "postedAt": "2026-07-08T03:12:26.252Z"
-    },
-    {
-      "id": "140593",
-      "name": "Sobeys Fast Fuel",
-      "brand": null,
-      "address": "530 Brookside Dr",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-07T20:57:50.716Z"
     },
     {
       "id": "85894",
@@ -175,7 +161,7 @@
       "midgrade": 186.1,
       "premium": 196.1,
       "diesel": 201.9,
-      "postedAt": "2026-07-09T17:59:07.652Z"
+      "postedAt": "2026-07-09T19:34:18.511Z"
     },
     {
       "id": "129747",
