@@ -1,14 +1,28 @@
 {
-  "generatedAt": "2026-07-11T06:30:03.811Z",
-  "lastLiveAt": "2026-07-11T06:30:03.811Z",
+  "generatedAt": "2026-07-11T17:15:38.484Z",
+  "lastLiveAt": "2026-07-11T17:15:38.484Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
-  "lowestRegular": 175.1,
+  "lowestRegular": 174.9,
   "highestRegular": 179.2,
-  "count": 17,
+  "count": 16,
   "stations": [
+    {
+      "id": "140184",
+      "name": "Costco",
+      "brand": "Costco",
+      "address": "25 Wayne Squibb Blvd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 174.9,
+      "midgrade": null,
+      "premium": 189.9,
+      "diesel": null,
+      "postedAt": "2026-07-11T16:38:03.102Z"
+    },
     {
       "id": "107630",
       "name": "Irving",
@@ -36,20 +50,6 @@
       "premium": 196.6,
       "diesel": 201.7,
       "postedAt": "2026-07-11T00:30:08.544Z"
-    },
-    {
-      "id": "126284",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1715 Woodstock Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-09T17:05:16.657Z"
     },
     {
       "id": "126321",
@@ -94,20 +94,6 @@
       "postedAt": "2026-07-09T17:58:08.120Z"
     },
     {
-      "id": "140184",
-      "name": "Costco",
-      "brand": "Costco",
-      "address": "25 Wayne Squibb Blvd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 176.9,
-      "midgrade": null,
-      "premium": 189.9,
-      "diesel": null,
-      "postedAt": "2026-07-11T02:12:39.401Z"
-    },
-    {
       "id": "107634",
       "name": "Canadian Tire",
       "brand": "Canadian Tire",
@@ -136,20 +122,6 @@
       "postedAt": "2026-07-11T00:29:56.208Z"
     },
     {
-      "id": "54578",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1169 Regent St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 178.4,
-      "midgrade": 186.3,
-      "premium": 196.6,
-      "diesel": null,
-      "postedAt": "2026-07-11T00:31:00.432Z"
-    },
-    {
       "id": "85904",
       "name": "Esso",
       "brand": "Esso",
@@ -161,7 +133,7 @@
       "midgrade": 181.8,
       "premium": 191.6,
       "diesel": 205.9,
-      "postedAt": "2026-07-11T02:12:58.306Z"
+      "postedAt": "2026-07-11T14:04:41.609Z"
     },
     {
       "id": "140593",
@@ -175,7 +147,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-10T17:53:08.253Z"
+      "postedAt": "2026-07-11T16:07:26.813Z"
     },
     {
       "id": "195009",
@@ -218,6 +190,20 @@
       "premium": null,
       "diesel": 206.7,
       "postedAt": "2026-07-10T19:37:49.572Z"
+    },
+    {
+      "id": "54578",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1169 Regent St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.9,
+      "midgrade": 186.3,
+      "premium": 196.6,
+      "diesel": null,
+      "postedAt": "2026-07-11T16:38:11.837Z"
     },
     {
       "id": "85892",
