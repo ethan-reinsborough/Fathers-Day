@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-12T06:52:45.143Z",
-  "lastLiveAt": "2026-07-12T06:52:45.143Z",
+  "generatedAt": "2026-07-12T17:17:26.487Z",
+  "lastLiveAt": "2026-07-12T17:17:26.487Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 174.1,
   "highestRegular": 178.4,
-  "count": 4,
+  "count": 6,
   "stations": [
     {
       "id": "107584",
@@ -24,6 +24,48 @@
       "postedAt": "2026-07-10T22:43:56.678Z"
     },
     {
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "405 Miramichi Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 177.4,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-12T15:59:00.970Z"
+    },
+    {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 177.4,
+      "midgrade": 189.4,
+      "premium": 199.7,
+      "diesel": null,
+      "postedAt": "2026-07-12T15:59:10.172Z"
+    },
+    {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 177.4,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 203.9,
+      "postedAt": "2026-07-12T13:33:11.264Z"
+    },
+    {
       "id": "54601",
       "name": "Shell",
       "brand": "Shell",
@@ -32,24 +74,10 @@
       "lat": null,
       "lng": null,
       "regular": 177.4,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 200.6,
-      "postedAt": "2026-07-11T14:27:18.951Z"
-    },
-    {
-      "id": "107589",
-      "name": "Sobeys Fast Fuel",
-      "brand": null,
-      "address": "405 Miramichi Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 177.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-11T01:00:22.855Z"
+      "midgrade": 188.7,
+      "premium": 199.1,
+      "diesel": 203.9,
+      "postedAt": "2026-07-12T16:07:56.165Z"
     },
     {
       "id": "208185",
