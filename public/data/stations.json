@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-13T07:40:05.111Z",
-  "lastLiveAt": "2026-07-13T07:40:05.111Z",
+  "generatedAt": "2026-07-13T18:08:15.514Z",
+  "lastLiveAt": "2026-07-13T18:08:15.514Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 174.9,
   "highestRegular": 179.2,
-  "count": 21,
+  "count": 23,
   "stations": [
     {
       "id": "140184",
@@ -21,7 +21,7 @@
       "midgrade": null,
       "premium": 189.9,
       "diesel": null,
-      "postedAt": "2026-07-12T21:12:16.246Z"
+      "postedAt": "2026-07-13T16:18:18.049Z"
     },
     {
       "id": "126885",
@@ -35,7 +35,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-13T01:55:43.453Z"
+      "postedAt": "2026-07-13T18:06:28.700Z"
     },
     {
       "id": "126321",
@@ -49,7 +49,7 @@
       "midgrade": 186.1,
       "premium": 196.1,
       "diesel": 201.9,
-      "postedAt": "2026-07-13T01:55:05.452Z"
+      "postedAt": "2026-07-13T18:06:10.053Z"
     },
     {
       "id": "17589",
@@ -77,21 +77,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-12T21:11:30.919Z"
-    },
-    {
-      "id": "131423",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "500 Waasis Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 177.4,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 203.9,
-      "postedAt": "2026-07-12T13:33:11.264Z"
+      "postedAt": "2026-07-13T16:01:09.663Z"
     },
     {
       "id": "54601",
@@ -108,6 +94,20 @@
       "postedAt": "2026-07-12T21:10:54.495Z"
     },
     {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 177.4,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 203.9,
+      "postedAt": "2026-07-12T13:33:11.264Z"
+    },
+    {
       "id": "107584",
       "name": "OFN Fuels",
       "brand": null,
@@ -122,6 +122,20 @@
       "postedAt": "2026-07-12T21:11:50.357Z"
     },
     {
+      "id": "54577",
+      "name": "CO-OP",
+      "brand": "CO-OP",
+      "address": "170 Doak Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.2,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-13T11:12:44.351Z"
+    },
+    {
       "id": "107634",
       "name": "Canadian Tire",
       "brand": "Canadian Tire",
@@ -133,7 +147,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-13T01:55:21.071Z"
+      "postedAt": "2026-07-13T18:06:50.767Z"
     },
     {
       "id": "85904",
@@ -147,7 +161,7 @@
       "midgrade": 181.8,
       "premium": 191.6,
       "diesel": 205.9,
-      "postedAt": "2026-07-13T01:55:40.106Z"
+      "postedAt": "2026-07-13T18:06:24.940Z"
     },
     {
       "id": "54579",
@@ -161,7 +175,7 @@
       "midgrade": 189,
       "premium": 199.3,
       "diesel": 205.2,
-      "postedAt": "2026-07-12T18:47:57.295Z"
+      "postedAt": "2026-07-13T18:06:43.139Z"
     },
     {
       "id": "54578",
@@ -175,7 +189,7 @@
       "midgrade": 186.3,
       "premium": 196.6,
       "diesel": null,
-      "postedAt": "2026-07-13T01:55:17.973Z"
+      "postedAt": "2026-07-13T18:06:34.415Z"
     },
     {
       "id": "208185",
@@ -203,7 +217,21 @@
       "midgrade": 189.5,
       "premium": 199.9,
       "diesel": 205,
-      "postedAt": "2026-07-13T01:55:53.286Z"
+      "postedAt": "2026-07-13T18:06:57.080Z"
+    },
+    {
+      "id": "114537",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "30 Lian St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.5,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 205,
+      "postedAt": "2026-07-13T18:07:03.566Z"
     },
     {
       "id": "140593",
@@ -230,8 +258,8 @@
       "regular": 178.5,
       "midgrade": null,
       "premium": null,
-      "diesel": 206.4,
-      "postedAt": "2026-07-13T01:55:27.085Z"
+      "diesel": 205,
+      "postedAt": "2026-07-13T18:07:09.830Z"
     },
     {
       "id": "85894",
@@ -245,7 +273,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 205.9,
-      "postedAt": "2026-07-13T01:55:48.593Z"
+      "postedAt": "2026-07-13T18:07:14.764Z"
     },
     {
       "id": "85896",
@@ -260,6 +288,20 @@
       "premium": null,
       "diesel": 205.9,
       "postedAt": "2026-07-11T21:50:51.671Z"
+    },
+    {
+      "id": "129747",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1759 Lincoln Rd",
+      "locality": "Lincoln",
+      "lat": null,
+      "lng": null,
+      "regular": 178.9,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-13T17:48:45.616Z"
     },
     {
       "id": "85893",
@@ -288,20 +330,6 @@
       "premium": 205.9,
       "diesel": null,
       "postedAt": "2026-07-11T22:08:44.194Z"
-    },
-    {
-      "id": "85892",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "536 Riverside Dr",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 179.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 205.7,
-      "postedAt": "2026-07-10T19:03:42.178Z"
     }
   ]
 }
