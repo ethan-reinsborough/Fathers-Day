@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-13T18:08:15.514Z",
-  "lastLiveAt": "2026-07-13T18:08:15.514Z",
+  "generatedAt": "2026-07-14T06:27:28.509Z",
+  "lastLiveAt": "2026-07-14T06:27:28.509Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 174.9,
-  "highestRegular": 179.2,
-  "count": 23,
+  "highestRegular": 179.5,
+  "count": 22,
   "stations": [
     {
       "id": "140184",
@@ -21,49 +21,7 @@
       "midgrade": null,
       "premium": 189.9,
       "diesel": null,
-      "postedAt": "2026-07-13T16:18:18.049Z"
-    },
-    {
-      "id": "126885",
-      "name": "Petro-Canada",
-      "brand": "Petro-Canada",
-      "address": "20 Royal Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.3,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-13T18:06:28.700Z"
-    },
-    {
-      "id": "126321",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "325 Sunset Dr E",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 175.3,
-      "midgrade": 186.1,
-      "premium": 196.1,
-      "diesel": 201.9,
-      "postedAt": "2026-07-13T18:06:10.053Z"
-    },
-    {
-      "id": "17589",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1 Gateway Dr",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 177.4,
-      "midgrade": 189.4,
-      "premium": 199.7,
-      "diesel": null,
-      "postedAt": "2026-07-12T21:10:37.021Z"
+      "postedAt": "2026-07-13T18:08:04.258Z"
     },
     {
       "id": "107589",
@@ -78,6 +36,20 @@
       "premium": null,
       "diesel": null,
       "postedAt": "2026-07-13T16:01:09.663Z"
+    },
+    {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 177.4,
+      "midgrade": 189.4,
+      "premium": 199.7,
+      "diesel": null,
+      "postedAt": "2026-07-12T21:10:37.021Z"
     },
     {
       "id": "54601",
@@ -136,6 +108,20 @@
       "postedAt": "2026-07-13T11:12:44.351Z"
     },
     {
+      "id": "126321",
+      "name": "Shell",
+      "brand": "Shell",
+      "address": "325 Sunset Dr E",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.2,
+      "midgrade": 189.5,
+      "premium": 199.4,
+      "diesel": 205.2,
+      "postedAt": "2026-07-14T03:11:06.775Z"
+    },
+    {
       "id": "107634",
       "name": "Canadian Tire",
       "brand": "Canadian Tire",
@@ -147,35 +133,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-13T18:06:50.767Z"
-    },
-    {
-      "id": "85904",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1190 Smythe St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 178.4,
-      "midgrade": 181.8,
-      "premium": 191.6,
-      "diesel": 205.9,
-      "postedAt": "2026-07-13T18:06:24.940Z"
-    },
-    {
-      "id": "54579",
-      "name": "Petro-Canada",
-      "brand": "Petro-Canada",
-      "address": "939 Prospect St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 178.4,
-      "midgrade": 189,
-      "premium": 199.3,
-      "diesel": 205.2,
-      "postedAt": "2026-07-13T18:06:43.139Z"
+      "postedAt": "2026-07-14T03:11:26.585Z"
     },
     {
       "id": "54578",
@@ -189,7 +147,35 @@
       "midgrade": 186.3,
       "premium": 196.6,
       "diesel": null,
-      "postedAt": "2026-07-13T18:06:34.415Z"
+      "postedAt": "2026-07-14T03:11:40.001Z"
+    },
+    {
+      "id": "85904",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1190 Smythe St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.4,
+      "midgrade": 181.8,
+      "premium": 191.6,
+      "diesel": 205.9,
+      "postedAt": "2026-07-14T02:37:52.835Z"
+    },
+    {
+      "id": "54579",
+      "name": "Petro-Canada",
+      "brand": "Petro-Canada",
+      "address": "939 Prospect St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.4,
+      "midgrade": 189,
+      "premium": 199.3,
+      "diesel": 205.2,
+      "postedAt": "2026-07-14T00:48:44.910Z"
     },
     {
       "id": "208185",
@@ -206,18 +192,18 @@
       "postedAt": "2026-07-12T21:14:44.300Z"
     },
     {
-      "id": "174919",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1735 NB-640",
+      "id": "126885",
+      "name": "Petro-Canada",
+      "brand": "Petro-Canada",
+      "address": "20 Royal Rd",
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
       "regular": 178.5,
-      "midgrade": 189.5,
-      "premium": 199.9,
-      "diesel": 205,
-      "postedAt": "2026-07-13T18:06:57.080Z"
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-13T18:59:06.912Z"
     },
     {
       "id": "114537",
@@ -231,7 +217,49 @@
       "midgrade": null,
       "premium": null,
       "diesel": 205,
-      "postedAt": "2026-07-13T18:07:03.566Z"
+      "postedAt": "2026-07-14T00:48:29.116Z"
+    },
+    {
+      "id": "174919",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1735 NB-640",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.5,
+      "midgrade": 189.5,
+      "premium": 199.9,
+      "diesel": 205,
+      "postedAt": "2026-07-14T03:11:15.159Z"
+    },
+    {
+      "id": "85896",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "361 Main St",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.5,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 205.2,
+      "postedAt": "2026-07-14T00:49:02.124Z"
+    },
+    {
+      "id": "195009",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "1201 Hanwell Rd",
+      "locality": "Fredericton",
+      "lat": null,
+      "lng": null,
+      "regular": 178.5,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 205,
+      "postedAt": "2026-07-14T03:11:56.009Z"
     },
     {
       "id": "140593",
@@ -248,48 +276,6 @@
       "postedAt": "2026-07-12T18:47:58.453Z"
     },
     {
-      "id": "195009",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "1201 Hanwell Rd",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 178.5,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 205,
-      "postedAt": "2026-07-13T18:07:09.830Z"
-    },
-    {
-      "id": "85894",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "95 Main St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 178.8,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 205.9,
-      "postedAt": "2026-07-13T18:07:14.764Z"
-    },
-    {
-      "id": "85896",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "361 Main St",
-      "locality": "Fredericton",
-      "lat": null,
-      "lng": null,
-      "regular": 178.8,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 205.9,
-      "postedAt": "2026-07-11T21:50:51.671Z"
-    },
-    {
       "id": "129747",
       "name": "Irving",
       "brand": "Irving",
@@ -300,8 +286,8 @@
       "regular": 178.9,
       "midgrade": null,
       "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-13T17:48:45.616Z"
+      "diesel": 206.7,
+      "postedAt": "2026-07-13T18:41:12.259Z"
     },
     {
       "id": "85893",
@@ -318,18 +304,18 @@
       "postedAt": "2026-07-12T18:48:09.573Z"
     },
     {
-      "id": "85897",
-      "name": "Ultramar",
+      "id": "85894",
+      "name": "Irving",
       "brand": "Irving",
-      "address": "623 Union St",
+      "address": "95 Main St",
       "locality": "Fredericton",
       "lat": null,
       "lng": null,
-      "regular": 179.2,
+      "regular": 179.5,
       "midgrade": null,
-      "premium": 205.9,
-      "diesel": null,
-      "postedAt": "2026-07-11T22:08:44.194Z"
+      "premium": null,
+      "diesel": 205.2,
+      "postedAt": "2026-07-14T03:11:55.090Z"
     }
   ]
 }
