@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-07-22T06:46:09.529Z",
-  "lastLiveAt": "2026-07-22T06:46:09.529Z",
+  "generatedAt": "2026-07-22T17:41:57.732Z",
+  "lastLiveAt": "2026-07-22T17:41:57.732Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 181,
   "highestRegular": 182,
-  "count": 2,
+  "count": 5,
   "stations": [
+    {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 181,
+      "midgrade": 194.2,
+      "premium": 205.4,
+      "diesel": null,
+      "postedAt": "2026-07-22T13:12:41.636Z"
+    },
+    {
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "405 Miramichi Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 181,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-22T13:11:23.123Z"
+    },
     {
       "id": "131423",
       "name": "Canadian Tire",
@@ -21,7 +49,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": 217.5,
-      "postedAt": "2026-07-20T16:30:33.781Z"
+      "postedAt": "2026-07-22T10:56:02.815Z"
+    },
+    {
+      "id": "107584",
+      "name": "OFN Fuels",
+      "brand": null,
+      "address": "2 Hiawatha Ave",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 181.1,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-07-22T09:01:38.528Z"
     },
     {
       "id": "54601",
