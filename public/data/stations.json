@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-23T06:43:50.944Z",
-  "lastLiveAt": "2026-07-23T06:43:50.944Z",
+  "generatedAt": "2026-07-23T17:47:31.547Z",
+  "lastLiveAt": "2026-07-23T17:47:31.547Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 181,
-  "highestRegular": 182,
+  "highestRegular": 182.4,
   "count": 5,
   "stations": [
     {
@@ -49,7 +49,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 217.5,
-      "postedAt": "2026-07-22T10:56:02.815Z"
+      "postedAt": "2026-07-23T15:55:10.228Z"
     },
     {
       "id": "107584",
@@ -66,18 +66,18 @@
       "postedAt": "2026-07-22T09:01:38.528Z"
     },
     {
-      "id": "54601",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "201 Restigouche Rd",
+      "id": "208185",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "68 Miramichi Rd",
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 182,
+      "regular": 182.4,
       "midgrade": null,
       "premium": null,
-      "diesel": 225.3,
-      "postedAt": "2026-07-21T06:27:10.4542759-04:00"
+      "diesel": null,
+      "postedAt": "2026-07-23T16:27:34.184Z"
     }
   ]
 }
