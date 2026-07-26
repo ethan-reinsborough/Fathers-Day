@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-26T06:52:26.757Z",
-  "lastLiveAt": "2026-07-26T06:52:26.757Z",
+  "generatedAt": "2026-07-26T17:17:19.183Z",
+  "lastLiveAt": "2026-07-26T17:17:19.183Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 187.2,
-  "highestRegular": 188.7,
-  "count": 6,
+  "highestRegular": 188.2,
+  "count": 4,
   "stations": [
     {
       "id": "17589",
@@ -21,21 +21,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-25T23:15:03.897Z"
+      "postedAt": "2026-07-26T15:38:52.148Z"
     },
     {
-      "id": "131423",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "500 Waasis Rd",
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "405 Miramichi Rd",
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 187.7,
+      "regular": 187.2,
       "midgrade": null,
       "premium": null,
-      "diesel": 217.5,
-      "postedAt": "2026-07-24T13:38:46.533Z"
+      "diesel": 243.8,
+      "postedAt": "2026-07-26T15:39:50.176Z"
     },
     {
       "id": "54601",
@@ -45,11 +45,11 @@
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 187.7,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-24T13:24:52.082Z"
+      "regular": 187.2,
+      "midgrade": 201.3,
+      "premium": 213.8,
+      "diesel": 243.8,
+      "postedAt": "2026-07-26T14:53:03.516Z"
     },
     {
       "id": "107584",
@@ -64,34 +64,6 @@
       "premium": null,
       "diesel": null,
       "postedAt": "2026-07-25T16:39:36.529Z"
-    },
-    {
-      "id": "107589",
-      "name": "Sobeys Fast Fuel",
-      "brand": null,
-      "address": "405 Miramichi Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 188.2,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 243.8,
-      "postedAt": "2026-07-24T17:33:55.205Z"
-    },
-    {
-      "id": "208185",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "68 Miramichi Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 188.7,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-07-24T16:41:44.234Z"
     }
   ]
 }
