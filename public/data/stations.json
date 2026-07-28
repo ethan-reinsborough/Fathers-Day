@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-28T06:43:52.559Z",
-  "lastLiveAt": "2026-07-28T06:43:52.559Z",
+  "generatedAt": "2026-07-28T17:48:10.839Z",
+  "lastLiveAt": "2026-07-28T17:48:10.839Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 187.2,
   "highestRegular": 187.7,
-  "count": 5,
+  "count": 4,
   "stations": [
     {
-      "id": "107584",
-      "name": "OFN Fuels",
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
       "brand": null,
-      "address": "2 Hiawatha Ave",
+      "address": "405 Miramichi Rd",
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
@@ -21,7 +21,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-27T17:34:09.414Z"
+      "postedAt": "2026-07-28T08:10:37.574Z"
     },
     {
       "id": "17589",
@@ -35,35 +35,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-07-26T18:59:19.536Z"
+      "postedAt": "2026-07-28T08:10:33.504Z"
     },
     {
-      "id": "107589",
-      "name": "Sobeys Fast Fuel",
+      "id": "107584",
+      "name": "OFN Fuels",
       "brand": null,
-      "address": "405 Miramichi Rd",
+      "address": "2 Hiawatha Ave",
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
       "regular": 187.2,
       "midgrade": null,
       "premium": null,
-      "diesel": 243.8,
-      "postedAt": "2026-07-26T18:59:09.686Z"
-    },
-    {
-      "id": "54601",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "201 Restigouche Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 187.2,
-      "midgrade": 201.3,
-      "premium": 213.8,
-      "diesel": 243.8,
-      "postedAt": "2026-07-26T14:53:03.516Z"
+      "diesel": null,
+      "postedAt": "2026-07-28T07:48:10.165Z"
     },
     {
       "id": "208185",
