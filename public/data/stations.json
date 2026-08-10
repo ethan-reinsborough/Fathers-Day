@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-10T05:47:42.998Z",
-  "lastLiveAt": "2026-08-10T05:47:42.998Z",
+  "generatedAt": "2026-08-10T17:08:52.186Z",
+  "lastLiveAt": "2026-08-10T17:08:52.186Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 173.2,
-  "highestRegular": 174,
-  "count": 4,
+  "highestRegular": 173.5,
+  "count": 5,
   "stations": [
     {
       "id": "131423",
@@ -24,20 +24,6 @@
       "postedAt": "2026-08-09T13:29:12.013Z"
     },
     {
-      "id": "17589",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1 Gateway Dr",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 173.5,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-09T16:18:09.899Z"
-    },
-    {
       "id": "107589",
       "name": "Sobeys Fast Fuel",
       "brand": null,
@@ -52,6 +38,20 @@
       "postedAt": "2026-08-09T16:18:15.597Z"
     },
     {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 173.5,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-09T16:18:09.899Z"
+    },
+    {
       "id": "54601",
       "name": "Shell",
       "brand": "Shell",
@@ -59,11 +59,25 @@
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 174,
+      "regular": 173.5,
       "midgrade": null,
       "premium": null,
       "diesel": 229.7,
-      "postedAt": "2026-08-09T17:10:33.577Z"
+      "postedAt": "2026-08-10T11:30:48.433Z"
+    },
+    {
+      "id": "107584",
+      "name": "OFN Fuels",
+      "brand": null,
+      "address": "2 Hiawatha Ave",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 173.5,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-10T15:41:35.792Z"
     }
   ]
 }
