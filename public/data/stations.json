@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-09T16:54:44.502Z",
-  "lastLiveAt": "2026-08-09T16:54:44.502Z",
+  "generatedAt": "2026-08-10T05:47:42.998Z",
+  "lastLiveAt": "2026-08-10T05:47:42.998Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 173.2,
-  "highestRegular": 174.5,
-  "count": 5,
+  "highestRegular": 174,
+  "count": 4,
   "stations": [
     {
       "id": "131423",
@@ -24,20 +24,6 @@
       "postedAt": "2026-08-09T13:29:12.013Z"
     },
     {
-      "id": "107589",
-      "name": "Sobeys Fast Fuel",
-      "brand": null,
-      "address": "405 Miramichi Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 173.5,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-09T16:18:15.597Z"
-    },
-    {
       "id": "17589",
       "name": "Esso",
       "brand": "Esso",
@@ -52,6 +38,20 @@
       "postedAt": "2026-08-09T16:18:09.899Z"
     },
     {
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "405 Miramichi Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 173.5,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-09T16:18:15.597Z"
+    },
+    {
       "id": "54601",
       "name": "Shell",
       "brand": "Shell",
@@ -63,21 +63,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 229.7,
-      "postedAt": "2026-08-09T16:31:37.227Z"
-    },
-    {
-      "id": "107584",
-      "name": "OFN Fuels",
-      "brand": null,
-      "address": "2 Hiawatha Ave",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 174.5,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-07T22:24:13.046Z"
+      "postedAt": "2026-08-09T17:10:33.577Z"
     }
   ]
 }
