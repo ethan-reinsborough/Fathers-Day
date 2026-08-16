@@ -1,14 +1,28 @@
 {
-  "generatedAt": "2026-08-16T04:53:44.598Z",
-  "lastLiveAt": "2026-08-16T04:53:44.598Z",
+  "generatedAt": "2026-08-16T16:42:00.323Z",
+  "lastLiveAt": "2026-08-16T16:42:00.323Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 175.6,
-  "highestRegular": 175.8,
+  "highestRegular": 175.6,
   "count": 3,
   "stations": [
+    {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 175.6,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 232.8,
+      "postedAt": "2026-08-16T15:44:52.083Z"
+    },
     {
       "id": "107589",
       "name": "Sobeys Fast Fuel",
@@ -21,7 +35,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-08-15T20:23:34.610Z"
+      "postedAt": "2026-08-16T15:43:24.443Z"
     },
     {
       "id": "131423",
@@ -36,20 +50,6 @@
       "premium": null,
       "diesel": 232.8,
       "postedAt": "2026-08-14T17:47:16.198Z"
-    },
-    {
-      "id": "17589",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1 Gateway Dr",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 175.8,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 232.8,
-      "postedAt": "2026-08-15T23:33:45.178Z"
     }
   ]
 }
