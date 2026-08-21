@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-20T16:52:39.729Z",
-  "lastLiveAt": "2026-08-20T16:52:39.729Z",
+  "generatedAt": "2026-08-21T04:57:43.651Z",
+  "lastLiveAt": "2026-08-21T04:57:43.651Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 175.6,
-  "highestRegular": 175.6,
-  "count": 1,
+  "highestRegular": 181.9,
+  "count": 2,
   "stations": [
     {
       "id": "17589",
@@ -18,10 +18,24 @@
       "lat": null,
       "lng": null,
       "regular": 175.6,
-      "midgrade": 189.9,
-      "premium": 202.5,
-      "diesel": 232.8,
-      "postedAt": "2026-08-18T17:50:54.180Z"
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-20T22:26:24.022Z"
+    },
+    {
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "405 Miramichi Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 181.9,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-20T22:25:36.059Z"
     }
   ]
 }
