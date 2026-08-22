@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-22T04:52:22.751Z",
-  "lastLiveAt": "2026-08-22T04:52:22.751Z",
+  "generatedAt": "2026-08-22T16:41:16.827Z",
+  "lastLiveAt": "2026-08-22T16:41:16.827Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
-  "lowestRegular": 175.1,
-  "highestRegular": 181.9,
-  "count": 3,
+  "lowestRegular": 174.6,
+  "highestRegular": 181.1,
+  "count": 5,
   "stations": [
     {
       "id": "17589",
@@ -17,11 +17,53 @@
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 175.1,
+      "regular": 174.6,
       "midgrade": 195.1,
       "premium": 207.8,
       "diesel": null,
-      "postedAt": "2026-08-21T14:55:53.958Z"
+      "postedAt": "2026-08-22T14:54:13.779Z"
+    },
+    {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 174.6,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 236.4,
+      "postedAt": "2026-08-22T14:32:00.012Z"
+    },
+    {
+      "id": "107584",
+      "name": "OFN Fuels",
+      "brand": null,
+      "address": "2 Hiawatha Ave",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 174.6,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-22T14:28:31.273Z"
+    },
+    {
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "405 Miramichi Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 175.1,
+      "midgrade": 184.6,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-22T14:26:45.345Z"
     },
     {
       "id": "54601",
@@ -36,20 +78,6 @@
       "premium": null,
       "diesel": null,
       "postedAt": "2026-08-21T13:22:18.518Z"
-    },
-    {
-      "id": "107589",
-      "name": "Sobeys Fast Fuel",
-      "brand": null,
-      "address": "405 Miramichi Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 181.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-20T22:25:36.059Z"
     }
   ]
 }
