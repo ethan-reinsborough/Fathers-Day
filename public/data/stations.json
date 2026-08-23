@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T16:41:16.827Z",
-  "lastLiveAt": "2026-08-22T16:41:16.827Z",
+  "generatedAt": "2026-08-23T04:55:50.889Z",
+  "lastLiveAt": "2026-08-23T04:55:50.889Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
@@ -9,34 +9,6 @@
   "highestRegular": 181.1,
   "count": 5,
   "stations": [
-    {
-      "id": "17589",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1 Gateway Dr",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 174.6,
-      "midgrade": 195.1,
-      "premium": 207.8,
-      "diesel": null,
-      "postedAt": "2026-08-22T14:54:13.779Z"
-    },
-    {
-      "id": "131423",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "500 Waasis Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 174.6,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 236.4,
-      "postedAt": "2026-08-22T14:32:00.012Z"
-    },
     {
       "id": "107584",
       "name": "OFN Fuels",
@@ -52,6 +24,34 @@
       "postedAt": "2026-08-22T14:28:31.273Z"
     },
     {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 174.6,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 236.4,
+      "postedAt": "2026-08-23T00:24:33.220Z"
+    },
+    {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 174.6,
+      "midgrade": 195.1,
+      "premium": 207.8,
+      "diesel": null,
+      "postedAt": "2026-08-22T19:01:10.504Z"
+    },
+    {
       "id": "107589",
       "name": "Sobeys Fast Fuel",
       "brand": null,
@@ -63,7 +63,7 @@
       "midgrade": 184.6,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-08-22T14:26:45.345Z"
+      "postedAt": "2026-08-22T19:01:13.960Z"
     },
     {
       "id": "54601",
