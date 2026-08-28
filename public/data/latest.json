@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-27T15:13:31.536Z",
+  "generatedAt": "2026-08-28T00:50:42.871Z",
   "area": "Fredericton, NB (province-wide regulated max)",
   "regulated": {
-    "regularSelfServe": 186.7,
-    "regularFullServe": 190.2,
-    "midGrade": 199.4,
-    "premium": 212,
-    "diesel": 244,
-    "furnace": 236.7,
-    "propane": 102.3,
+    "regularSelfServe": null,
+    "regularFullServe": null,
+    "midGrade": null,
+    "premium": null,
+    "diesel": null,
+    "furnace": null,
+    "propane": null,
     "source": "NBEUB",
     "sourceUrl": "https://nbeub.ca/current-petroleum-prices-2",
-    "effectiveDate": "2026-08-26"
+    "effectiveDate": "2026-06-19"
   },
   "prediction": null,
   "benchmarkSeries": [],
