@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-08-28T00:55:41.656Z",
-  "lastLiveAt": "2026-08-28T00:55:41.656Z",
+  "generatedAt": "2026-08-28T16:41:34.739Z",
+  "lastLiveAt": "2026-08-28T16:41:34.739Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 174.1,
-  "highestRegular": 181.9,
+  "highestRegular": 185.6,
   "count": 6,
   "stations": [
+    {
+      "id": "54601",
+      "name": "Shell",
+      "brand": "Shell",
+      "address": "201 Restigouche Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 174.1,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-08-28T14:47:06.456Z"
+    },
+    {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 174.1,
+      "midgrade": 185.1,
+      "premium": 197.1,
+      "diesel": 231.7,
+      "postedAt": "2026-08-28T15:01:48.614Z"
+    },
     {
       "id": "107589",
       "name": "Sobeys Fast Fuel",
@@ -38,34 +66,6 @@
       "postedAt": "2026-08-27T17:27:28.626Z"
     },
     {
-      "id": "54601",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "201 Restigouche Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 174.6,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-27T00:03:55.738Z"
-    },
-    {
-      "id": "208185",
-      "name": "Irving",
-      "brand": "Irving",
-      "address": "68 Miramichi Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 175.1,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-27T15:07:19.181Z"
-    },
-    {
       "id": "17589",
       "name": "Esso",
       "brand": "Esso",
@@ -80,18 +80,18 @@
       "postedAt": "2026-08-27T21:51:20.376Z"
     },
     {
-      "id": "131423",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "500 Waasis Rd",
+      "id": "208185",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "68 Miramichi Rd",
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 181.9,
+      "regular": 185.6,
       "midgrade": null,
       "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-27T21:50:43.685Z"
+      "diesel": 243.2,
+      "postedAt": "2026-08-28T14:54:25.200Z"
     }
   ]
 }
