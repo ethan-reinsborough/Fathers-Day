@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-08-28T16:41:34.739Z",
-  "lastLiveAt": "2026-08-28T16:41:34.739Z",
+  "generatedAt": "2026-08-29T00:37:16.071Z",
+  "lastLiveAt": "2026-08-29T00:37:16.071Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
-  "lowestRegular": 174.1,
+  "lowestRegular": 173.6,
   "highestRegular": 185.6,
   "count": 6,
   "stations": [
     {
-      "id": "54601",
-      "name": "Shell",
-      "brand": "Shell",
-      "address": "201 Restigouche Rd",
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 174.1,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-08-28T14:47:06.456Z"
+      "regular": 173.6,
+      "midgrade": 195.3,
+      "premium": 207.9,
+      "diesel": 235.9,
+      "postedAt": "2026-08-28T20:59:29.138Z"
     },
     {
       "id": "131423",
@@ -31,11 +31,11 @@
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 174.1,
-      "midgrade": 185.1,
-      "premium": 197.1,
-      "diesel": 231.7,
-      "postedAt": "2026-08-28T15:01:48.614Z"
+      "regular": 173.6,
+      "midgrade": 184.6,
+      "premium": 196.6,
+      "diesel": 231.2,
+      "postedAt": "2026-08-28T21:06:30.002Z"
     },
     {
       "id": "107589",
@@ -49,7 +49,21 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-08-27T15:09:44.111Z"
+      "postedAt": "2026-08-28T20:59:19.652Z"
+    },
+    {
+      "id": "54601",
+      "name": "Shell",
+      "brand": "Shell",
+      "address": "201 Restigouche Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 174.1,
+      "midgrade": 197.9,
+      "premium": 210.2,
+      "diesel": null,
+      "postedAt": "2026-08-28T17:32:36.523Z"
     },
     {
       "id": "107584",
@@ -66,20 +80,6 @@
       "postedAt": "2026-08-27T17:27:28.626Z"
     },
     {
-      "id": "17589",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1 Gateway Dr",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 181.9,
-      "midgrade": 195.3,
-      "premium": 207.9,
-      "diesel": 235.9,
-      "postedAt": "2026-08-27T21:51:20.376Z"
-    },
-    {
       "id": "208185",
       "name": "Irving",
       "brand": "Irving",
@@ -91,7 +91,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": 243.2,
-      "postedAt": "2026-08-28T14:54:25.200Z"
+      "postedAt": "2026-08-28T21:02:07.829Z"
     }
   ]
 }
