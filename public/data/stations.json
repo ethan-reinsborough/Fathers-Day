@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-31T21:31:41.191Z",
-  "lastLiveAt": "2026-08-31T21:31:41.191Z",
+  "generatedAt": "2026-09-01T09:28:18.425Z",
+  "lastLiveAt": "2026-09-01T09:28:18.425Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
@@ -24,20 +24,6 @@
       "postedAt": "2026-08-31T15:29:47.968Z"
     },
     {
-      "id": "131423",
-      "name": "Canadian Tire",
-      "brand": "Canadian Tire",
-      "address": "500 Waasis Rd",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 173.6,
-      "midgrade": null,
-      "premium": null,
-      "diesel": 231.2,
-      "postedAt": "2026-08-31T17:05:38.140Z"
-    },
-    {
       "id": "107584",
       "name": "OFN Fuels",
       "brand": null,
@@ -50,6 +36,20 @@
       "premium": 196.6,
       "diesel": null,
       "postedAt": "2026-08-31T20:05:26.540Z"
+    },
+    {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 173.6,
+      "midgrade": null,
+      "premium": null,
+      "diesel": 231.2,
+      "postedAt": "2026-08-31T17:05:38.140Z"
     },
     {
       "id": "107589",
