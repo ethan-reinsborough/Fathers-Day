@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-04T09:01:34.304Z",
-  "lastLiveAt": "2026-09-04T09:01:34.304Z",
+  "generatedAt": "2026-09-04T19:03:14.741Z",
+  "lastLiveAt": "2026-09-04T19:03:14.741Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
-  "lowestRegular": 173.1,
-  "highestRegular": 173.6,
+  "lowestRegular": 189.1,
+  "highestRegular": 189.9,
   "count": 3,
   "stations": [
     {
@@ -17,25 +17,11 @@
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 173.1,
+      "regular": 189.1,
       "midgrade": 197.9,
       "premium": null,
-      "diesel": 248.7,
-      "postedAt": "2026-09-03T22:27:36.496Z"
-    },
-    {
-      "id": "17589",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1 Gateway Dr",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 173.1,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-09-02T18:55:53.473Z"
+      "diesel": 250.1,
+      "postedAt": "2026-09-04T13:47:12.702Z"
     },
     {
       "id": "107584",
@@ -45,11 +31,25 @@
       "locality": "Oromocto",
       "lat": null,
       "lng": null,
-      "regular": 173.6,
+      "regular": 189.8,
       "midgrade": null,
-      "premium": 196.6,
+      "premium": null,
       "diesel": null,
-      "postedAt": "2026-09-02T14:47:04.757Z"
+      "postedAt": "2026-09-04T18:51:21.902Z"
+    },
+    {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 189.9,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-09-04T18:24:47.162Z"
     }
   ]
 }
