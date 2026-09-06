@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-09-06T08:43:36.684Z",
-  "lastLiveAt": "2026-09-06T08:43:36.684Z",
+  "generatedAt": "2026-09-06T18:18:55.412Z",
+  "lastLiveAt": "2026-09-06T18:18:55.412Z",
   "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
   "source": "GasBuddy",
   "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
   "stale": false,
   "lowestRegular": 189.1,
-  "highestRegular": 189.9,
-  "count": 3,
+  "highestRegular": 189.8,
+  "count": 6,
   "stations": [
+    {
+      "id": "17589",
+      "name": "Esso",
+      "brand": "Esso",
+      "address": "1 Gateway Dr",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 189.1,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-09-06T17:23:18.045Z"
+    },
+    {
+      "id": "107589",
+      "name": "Sobeys Fast Fuel",
+      "brand": null,
+      "address": "405 Miramichi Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 189.1,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-09-06T15:23:08.302Z"
+    },
     {
       "id": "54601",
       "name": "Shell",
@@ -18,10 +46,38 @@
       "lat": null,
       "lng": null,
       "regular": 189.1,
+      "midgrade": 202.8,
+      "premium": 215.9,
+      "diesel": 249.3,
+      "postedAt": "2026-09-06T15:30:00.135Z"
+    },
+    {
+      "id": "131423",
+      "name": "Canadian Tire",
+      "brand": "Canadian Tire",
+      "address": "500 Waasis Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 189.1,
       "midgrade": null,
       "premium": null,
-      "diesel": 246.7,
-      "postedAt": "2026-09-05T13:15:58.223Z"
+      "diesel": 249.3,
+      "postedAt": "2026-09-06T13:26:12.235Z"
+    },
+    {
+      "id": "208185",
+      "name": "Irving",
+      "brand": "Irving",
+      "address": "68 Miramichi Rd",
+      "locality": "Oromocto",
+      "lat": null,
+      "lng": null,
+      "regular": 189.6,
+      "midgrade": null,
+      "premium": null,
+      "diesel": null,
+      "postedAt": "2026-09-06T17:22:58.249Z"
     },
     {
       "id": "107584",
@@ -35,21 +91,7 @@
       "midgrade": null,
       "premium": null,
       "diesel": null,
-      "postedAt": "2026-09-04T18:51:21.902Z"
-    },
-    {
-      "id": "17589",
-      "name": "Esso",
-      "brand": "Esso",
-      "address": "1 Gateway Dr",
-      "locality": "Oromocto",
-      "lat": null,
-      "lng": null,
-      "regular": 189.9,
-      "midgrade": null,
-      "premium": null,
-      "diesel": null,
-      "postedAt": "2026-09-04T18:24:47.162Z"
+      "postedAt": "2026-09-06T17:17:09.223Z"
     }
   ]
 }
