@@ -1,13 +1,10 @@
 {
-  "generatedAt": "2026-09-08T19:29:23.274Z",
-  "lastLiveAt": "2026-09-08T19:29:23.274Z",
-  "area": "Fredericton, NB · Oromocto, NB · Nackawic, NB",
+  "generatedAt": "2026-09-08T22:23:06.120Z",
+  "area": "Hanwell, NB · Fredericton, NB · Oromocto, NB · Nackawic, NB · Woodstock, NB · Edmundston, NB · Grand Falls, NB · Saint John, NB · Sussex, NB · Moncton, NB · Shediac, NB · Sackville, NB · Miramichi, NB · Bathurst, NB · Campbellton, NB · Caraquet, NB · Tracadie, NB · St. Stephen, NB · Saint Andrews, NB · Grand Manan, NB · Richibucto, NB · Doaktown, NB · Saint-Quentin, NB",
   "source": "GasBuddy",
-  "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
-  "stale": false,
-  "lowestRegular": 185.9,
-  "highestRegular": 191.8,
-  "count": 6,
+  "sourceUrl": "https://www.gasbuddy.com/gasprices/canada/new-brunswick",
+  "stale": true,
+  "staleReason": "no stations captured (Cloudflare block or no data)",
   "stations": [
     {
       "id": "140184",
@@ -93,5 +90,7 @@
       "diesel": null,
       "postedAt": "2026-09-06T19:50:01.691Z"
     }
-  ]
+  ],
+  "lowestRegular": 185.9,
+  "lastLiveAt": "2026-09-08T19:29:23.274Z"
 }
