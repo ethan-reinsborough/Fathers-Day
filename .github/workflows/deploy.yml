@@ -28,12 +28,13 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - run: npm ci
@@ -49,6 +50,7 @@ jobs:
           fi
 
       - name: Build regulated prices + forecast (NBEUB, FRED, Bank of Canada)
+        timeout-minutes: 3
         run: npm run data
 
       - name: Install Chromium (for actual station prices)
@@ -56,8 +58,12 @@ jobs:
         continue-on-error: true
 
       - name: Scrape actual pump prices — best effort, never fails the build
+        timeout-minutes: 9
         run: npm run data:stations
         continue-on-error: true
+
+      - name: Check app and regression tests
+        run: npm run check && npm test
 
       - name: Build site
         env:

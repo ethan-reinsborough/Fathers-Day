@@ -18,7 +18,10 @@ export async function fetchText(url, { headers = {}, tries = 3 } = {}) {
   let lastErr;
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(url, { headers: { "User-Agent": UA, ...headers } });
+      const res = await fetch(url, {
+        headers: { "User-Agent": UA, ...headers },
+        signal: AbortSignal.timeout(12000),
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.text();
     } catch (e) {
@@ -33,7 +36,10 @@ export async function fetchBuffer(url, { tries = 3 } = {}) {
   let lastErr;
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(url, { headers: { "User-Agent": UA } });
+      const res = await fetch(url, {
+        headers: { "User-Agent": UA },
+        signal: AbortSignal.timeout(12000),
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return Buffer.from(await res.arrayBuffer());
     } catch (e) {
@@ -50,7 +56,9 @@ const NBEUB_XLS =
 
 // ---- NBEUB current regulated maximums (HTML table) ----
 export async function fetchRegulated() {
-  const html = await fetchText(NBEUB_HTML, { headers: { Accept: "text/html" } });
+  const html = await fetchText(NBEUB_HTML, {
+    headers: { Accept: "text/html" },
+  });
   const $ = cheerio.load(html);
   const map = {};
   $("tr").each((_, tr) => {
@@ -60,7 +68,9 @@ export async function fetchRegulated() {
     // turn the break into a space so keyword matching works.
     $(tds[0]).find("br").replaceWith(" ");
     const label = $(tds[0]).text().replace(/\s+/g, " ").trim().toLowerCase();
-    const priceTxt = $(tds[1]).text().replace(/[^\d.]/g, "");
+    const priceTxt = $(tds[1])
+      .text()
+      .replace(/[^\d.]/g, "");
     const price = parseFloat(priceTxt);
     if (!label || !isFinite(price) || price < 30 || price > 400) return;
     if (!(label in map)) map[label] = price;
@@ -74,8 +84,11 @@ export async function fetchRegulated() {
     return null;
   };
 
+  const regularSelfServe = pick("regular gasoline self", "regular self");
+  if (!Number.isFinite(regularSelfServe))
+    throw new Error("No valid regular price found in NBEUB table");
   return {
-    regularSelfServe: pick("regular gasoline self", "regular self"),
+    regularSelfServe,
     regularFullServe: pick("regular gasoline full", "regular full"),
     midGrade: pick("mid-grade gasoline self", "mid-grade self", "mid-grade"),
     premium: pick("premium gasoline self", "premium self", "premium"),
@@ -104,11 +117,19 @@ export function parseHistory(buf) {
 
   for (const name of wb.SheetNames) {
     const ws = wb.Sheets[name];
-    const rows = xlsx.utils.sheet_to_json(ws, { header: 1, raw: true, defval: null });
+    const rows = xlsx.utils.sheet_to_json(ws, {
+      header: 1,
+      raw: true,
+      defval: null,
+    });
 
     // Find the serial-date row (col0 === "Date").
     let dateRowIdx = rows.findIndex(
-      (r) => r && String(r[0] ?? "").trim().toLowerCase() === "date"
+      (r) =>
+        r &&
+        String(r[0] ?? "")
+          .trim()
+          .toLowerCase() === "date",
     );
     if (dateRowIdx < 0) continue;
     const dateRow = rows[dateRowIdx];
@@ -150,8 +171,13 @@ export function parseHistory(buf) {
     }
   }
 
-  const series = [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
-  return { series, latestDate: series.length ? series[series.length - 1].date : null };
+  const series = [...byDate.values()].sort((a, b) =>
+    a.date.localeCompare(b.date),
+  );
+  return {
+    series,
+    latestDate: series.length ? series[series.length - 1].date : null,
+  };
 }
 
 export async function fetchHistory(localFallback) {
@@ -174,15 +200,22 @@ export async function fetchHistory(localFallback) {
     }
   }
   const candidates = [live, local].filter((r) => r && r.series.length);
-  if (!candidates.length) throw new Error("No history available (live and fallback both empty).");
-  candidates.sort((a, b) => b.series.length - a.series.length);
-  return candidates[0];
+  if (!candidates.length)
+    throw new Error("No history available (live and fallback both empty).");
+  // Merge by date: a shorter live workbook can still contain the newest prices.
+  const merged = new Map();
+  for (const point of local?.series ?? []) merged.set(point.date, point);
+  for (const point of live?.series ?? []) merged.set(point.date, point);
+  const series = [...merged.values()].sort((a, b) =>
+    a.date.localeCompare(b.date),
+  );
+  return { series, latestDate: series.at(-1).date };
 }
 
 // ---- FRED DGASNYH: NY Harbor conventional gasoline spot (USD/gal), daily ----
 export async function fetchNyHarbor() {
   const csv = await fetchText(
-    "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGASNYH"
+    "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGASNYH",
   );
   const out = [];
   for (const line of csv.trim().split("\n").slice(1)) {
@@ -198,8 +231,8 @@ export async function fetchUsdCad(recent = 120) {
   const json = JSON.parse(
     await fetchText(
       `https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json?recent=${recent}`,
-      { headers: { Accept: "application/json" } }
-    )
+      { headers: { Accept: "application/json" } },
+    ),
   );
   return (json.observations || [])
     .map((o) => ({ date: o.d, rate: parseFloat(o.FXUSDCAD?.v) }))

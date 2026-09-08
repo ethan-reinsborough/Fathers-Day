@@ -1,318 +1,294 @@
 {
-  "generatedAt": "2026-06-21T06:30:38.260Z",
-  "area": "Fredericton, NB (province-wide regulated max)",
+  "generatedAt": "2026-09-08T21:59:29.836Z",
+  "area": "New Brunswick (province-wide regulated maximum)",
   "regulated": {
-    "regularSelfServe": 173.9,
-    "regularFullServe": 177.3,
-    "midGrade": 183.1,
-    "premium": 192.3,
-    "diesel": 204.8,
-    "furnace": 197.5,
-    "propane": 108.1,
+    "regularSelfServe": 194.4,
+    "regularFullServe": 197.8,
+    "midGrade": 207.5,
+    "premium": 220.6,
+    "diesel": 254.5,
+    "furnace": 247.7,
+    "propane": 103.8,
     "source": "NBEUB",
     "sourceUrl": "https://nbeub.ca/current-petroleum-prices-2",
-    "effectiveDate": "2026-06-19"
+    "effectiveDate": "2026-09-04",
+    "effectiveDateVerified": true
   },
-  "prediction": {
-    "nextChangeDate": "2026-06-26",
-    "effectiveDate": "2026-06-19",
-    "currentRegular": 173.9,
-    "predictedRegular": 174.2,
-    "deltaCents": 0.3,
-    "direction": "up",
-    "confidenceLow": 169.1,
-    "confidenceHigh": 179.3,
-    "confidenceHalfWidth": 5.1,
-    "daysObserved": 0,
-    "observedFraction": 0,
-    "interrupterRisk": false,
-    "interrupterNote": "",
-    "benchmark": {
-      "publishedCents": 103.2,
-      "publishedDate": "2026-06-19",
-      "computedRecentCents": 112.2,
-      "computedBaselineCents": 111.9,
-      "latestNyHarborDate": "2026-06-15",
-      "fixedComponentCents": 70.7,
-      "momentumCents": 0.3
-    },
-    "volatilityCentsPerDay": 1.9,
-    "method": "Predicted = current ceiling + NY-Harbour benchmark momentum (FRED DGASNYH × USD/CAD). NB sets the max weekly (Fri 12:01am AT) as benchmark + fixed margins/taxes/delivery."
-  },
+  "prediction": null,
   "benchmarkSeries": [
     {
-      "date": "2026-04-13",
-      "usdGal": 3.08,
-      "fx": 1.38,
-      "bcad": 112.38
+      "date": "2026-06-30",
+      "usdGal": 2.977,
+      "fx": 1.42,
+      "bcad": 111.75
     },
     {
-      "date": "2026-04-14",
-      "usdGal": 3.045,
-      "fx": 1.38,
+      "date": "2026-07-01",
+      "usdGal": 2.945,
+      "fx": 1.42,
+      "bcad": 110.55
+    },
+    {
+      "date": "2026-07-02",
+      "usdGal": 2.92,
+      "fx": 1.42,
+      "bcad": 109.39
+    },
+    {
+      "date": "2026-07-06",
+      "usdGal": 3.006,
+      "fx": 1.42,
+      "bcad": 112.91
+    },
+    {
+      "date": "2026-07-07",
+      "usdGal": 2.975,
+      "fx": 1.42,
+      "bcad": 111.59
+    },
+    {
+      "date": "2026-07-08",
+      "usdGal": 3.113,
+      "fx": 1.42,
+      "bcad": 116.56
+    },
+    {
+      "date": "2026-07-09",
+      "usdGal": 3.003,
+      "fx": 1.42,
+      "bcad": 112.4
+    },
+    {
+      "date": "2026-07-10",
+      "usdGal": 2.966,
+      "fx": 1.41,
+      "bcad": 110.84
+    },
+    {
+      "date": "2026-07-13",
+      "usdGal": 3.171,
+      "fx": 1.41,
+      "bcad": 118.49
+    },
+    {
+      "date": "2026-07-14",
+      "usdGal": 3.237,
+      "fx": 1.41,
+      "bcad": 120.29
+    },
+    {
+      "date": "2026-07-15",
+      "usdGal": 3.394,
+      "fx": 1.4,
+      "bcad": 125.96
+    },
+    {
+      "date": "2026-07-16",
+      "usdGal": 3.373,
+      "fx": 1.4,
+      "bcad": 125.09
+    },
+    {
+      "date": "2026-07-17",
+      "usdGal": 3.479,
+      "fx": 1.4,
+      "bcad": 128.8
+    },
+    {
+      "date": "2026-07-20",
+      "usdGal": 3.48,
+      "fx": 1.41,
+      "bcad": 129.2
+    },
+    {
+      "date": "2026-07-21",
+      "usdGal": 3.331,
+      "fx": 1.41,
+      "bcad": 124.03
+    },
+    {
+      "date": "2026-07-22",
+      "usdGal": 3.347,
+      "fx": 1.41,
+      "bcad": 124.56
+    },
+    {
+      "date": "2026-07-23",
+      "usdGal": 3.421,
+      "fx": 1.41,
+      "bcad": 127.27
+    },
+    {
+      "date": "2026-07-24",
+      "usdGal": 3.338,
+      "fx": 1.41,
+      "bcad": 124.27
+    },
+    {
+      "date": "2026-07-27",
+      "usdGal": 3.242,
+      "fx": 1.41,
+      "bcad": 120.88
+    },
+    {
+      "date": "2026-07-28",
+      "usdGal": 3.25,
+      "fx": 1.41,
+      "bcad": 121.07
+    },
+    {
+      "date": "2026-07-29",
+      "usdGal": 3.397,
+      "fx": 1.41,
+      "bcad": 126.38
+    },
+    {
+      "date": "2026-07-30",
+      "usdGal": 3.259,
+      "fx": 1.4,
+      "bcad": 120.65
+    },
+    {
+      "date": "2026-07-31",
+      "usdGal": 3.226,
+      "fx": 1.4,
+      "bcad": 119.56
+    },
+    {
+      "date": "2026-08-03",
+      "usdGal": 2.986,
+      "fx": 1.4,
       "bcad": 110.66
     },
     {
-      "date": "2026-04-15",
-      "usdGal": 3.083,
-      "fx": 1.37,
-      "bcad": 111.95
+      "date": "2026-08-04",
+      "usdGal": 2.854,
+      "fx": 1.41,
+      "bcad": 106.07
     },
     {
-      "date": "2026-04-16",
-      "usdGal": 3.185,
-      "fx": 1.37,
-      "bcad": 115.35
+      "date": "2026-08-05",
+      "usdGal": 2.84,
+      "fx": 1.4,
+      "bcad": 105.23
     },
     {
-      "date": "2026-04-17",
-      "usdGal": 3.034,
-      "fx": 1.37,
-      "bcad": 109.57
+      "date": "2026-08-06",
+      "usdGal": 2.965,
+      "fx": 1.4,
+      "bcad": 109.8
     },
     {
-      "date": "2026-04-20",
-      "usdGal": 3.133,
-      "fx": 1.37,
-      "bcad": 113.06
-    },
-    {
-      "date": "2026-04-21",
-      "usdGal": 3.244,
-      "fx": 1.37,
-      "bcad": 117
-    },
-    {
-      "date": "2026-04-22",
-      "usdGal": 3.382,
-      "fx": 1.37,
-      "bcad": 122.06
-    },
-    {
-      "date": "2026-04-23",
-      "usdGal": 3.523,
-      "fx": 1.37,
-      "bcad": 127.39
-    },
-    {
-      "date": "2026-04-24",
-      "usdGal": 3.534,
-      "fx": 1.37,
-      "bcad": 127.7
-    },
-    {
-      "date": "2026-04-27",
-      "usdGal": 3.521,
-      "fx": 1.36,
-      "bcad": 126.64
-    },
-    {
-      "date": "2026-04-28",
-      "usdGal": 3.586,
-      "fx": 1.37,
-      "bcad": 129.57
-    },
-    {
-      "date": "2026-04-29",
-      "usdGal": 3.788,
-      "fx": 1.37,
-      "bcad": 136.91
-    },
-    {
-      "date": "2026-04-30",
-      "usdGal": 3.843,
-      "fx": 1.36,
-      "bcad": 138.31
-    },
-    {
-      "date": "2026-05-01",
-      "usdGal": 3.63,
-      "fx": 1.36,
-      "bcad": 130.19
-    },
-    {
-      "date": "2026-05-04",
-      "usdGal": 3.748,
-      "fx": 1.36,
-      "bcad": 134.76
-    },
-    {
-      "date": "2026-05-05",
-      "usdGal": 3.67,
-      "fx": 1.36,
-      "bcad": 132.02
-    },
-    {
-      "date": "2026-05-06",
-      "usdGal": 3.511,
-      "fx": 1.36,
-      "bcad": 126.37
-    },
-    {
-      "date": "2026-05-07",
-      "usdGal": 3.536,
-      "fx": 1.36,
-      "bcad": 127.37
-    },
-    {
-      "date": "2026-05-08",
-      "usdGal": 3.548,
-      "fx": 1.37,
-      "bcad": 128.28
-    },
-    {
-      "date": "2026-05-11",
-      "usdGal": 3.645,
-      "fx": 1.37,
-      "bcad": 131.6
-    },
-    {
-      "date": "2026-05-12",
-      "usdGal": 3.747,
-      "fx": 1.37,
-      "bcad": 135.71
-    },
-    {
-      "date": "2026-05-13",
-      "usdGal": 3.683,
-      "fx": 1.37,
-      "bcad": 133.32
-    },
-    {
-      "date": "2026-05-14",
-      "usdGal": 3.678,
-      "fx": 1.37,
-      "bcad": 133.36
-    },
-    {
-      "date": "2026-05-15",
-      "usdGal": 3.794,
-      "fx": 1.38,
-      "bcad": 137.83
-    },
-    {
-      "date": "2026-05-18",
-      "usdGal": 3.769,
-      "fx": 1.38,
-      "bcad": 136.92
-    },
-    {
-      "date": "2026-05-19",
-      "usdGal": 3.786,
-      "fx": 1.38,
-      "bcad": 137.59
-    },
-    {
-      "date": "2026-05-20",
-      "usdGal": 3.563,
-      "fx": 1.38,
-      "bcad": 129.43
-    },
-    {
-      "date": "2026-05-21",
-      "usdGal": 3.519,
-      "fx": 1.38,
-      "bcad": 128.13
-    },
-    {
-      "date": "2026-05-22",
-      "usdGal": 3.48,
-      "fx": 1.38,
-      "bcad": 126.95
-    },
-    {
-      "date": "2026-05-26",
-      "usdGal": 3.257,
-      "fx": 1.38,
-      "bcad": 118.84
-    },
-    {
-      "date": "2026-05-27",
-      "usdGal": 3.195,
-      "fx": 1.38,
-      "bcad": 116.74
-    },
-    {
-      "date": "2026-05-28",
-      "usdGal": 3.323,
-      "fx": 1.38,
-      "bcad": 121.22
-    },
-    {
-      "date": "2026-05-29",
-      "usdGal": 3.194,
-      "fx": 1.38,
-      "bcad": 116.42
-    },
-    {
-      "date": "2026-06-01",
-      "usdGal": 3.187,
-      "fx": 1.38,
-      "bcad": 116.5
-    },
-    {
-      "date": "2026-06-02",
-      "usdGal": 3.243,
-      "fx": 1.38,
-      "bcad": 118.52
-    },
-    {
-      "date": "2026-06-03",
-      "usdGal": 3.234,
+      "date": "2026-08-07",
+      "usdGal": 2.97,
       "fx": 1.39,
-      "bcad": 118.62
+      "bcad": 109.4
     },
     {
-      "date": "2026-06-04",
-      "usdGal": 3.132,
+      "date": "2026-08-10",
+      "usdGal": 3.147,
       "fx": 1.39,
-      "bcad": 114.97
+      "bcad": 115.91
     },
     {
-      "date": "2026-06-05",
-      "usdGal": 3.13,
+      "date": "2026-08-11",
+      "usdGal": 3.152,
       "fx": 1.39,
-      "bcad": 115.13
+      "bcad": 115.97
     },
     {
-      "date": "2026-06-08",
-      "usdGal": 3.154,
+      "date": "2026-08-12",
+      "usdGal": 3.158,
       "fx": 1.39,
       "bcad": 116.21
     },
     {
-      "date": "2026-06-09",
-      "usdGal": 3.083,
+      "date": "2026-08-13",
+      "usdGal": 3.13,
       "fx": 1.39,
-      "bcad": 113.59
+      "bcad": 115.25
     },
     {
-      "date": "2026-06-10",
-      "usdGal": 3.129,
+      "date": "2026-08-14",
+      "usdGal": 3.192,
       "fx": 1.39,
-      "bcad": 115.14
+      "bcad": 117
     },
     {
-      "date": "2026-06-11",
-      "usdGal": 3.033,
-      "fx": 1.4,
-      "bcad": 112.12
+      "date": "2026-08-17",
+      "usdGal": 3.324,
+      "fx": 1.39,
+      "bcad": 121.75
     },
     {
-      "date": "2026-06-12",
-      "usdGal": 3.02,
-      "fx": 1.4,
-      "bcad": 111.51
+      "date": "2026-08-18",
+      "usdGal": 3.361,
+      "fx": 1.39,
+      "bcad": 123.32
     },
     {
-      "date": "2026-06-15",
-      "usdGal": 2.945,
-      "fx": 1.4,
-      "bcad": 108.78
+      "date": "2026-08-19",
+      "usdGal": 3.282,
+      "fx": 1.38,
+      "bcad": 119.86
+    },
+    {
+      "date": "2026-08-20",
+      "usdGal": 3.336,
+      "fx": 1.38,
+      "bcad": 121.48
+    },
+    {
+      "date": "2026-08-21",
+      "usdGal": 3.379,
+      "fx": 1.38,
+      "bcad": 122.83
+    },
+    {
+      "date": "2026-08-24",
+      "usdGal": 3.326,
+      "fx": 1.38,
+      "bcad": 121.62
+    },
+    {
+      "date": "2026-08-25",
+      "usdGal": 3.254,
+      "fx": 1.38,
+      "bcad": 118.96
+    },
+    {
+      "date": "2026-08-26",
+      "usdGal": 3.325,
+      "fx": 1.39,
+      "bcad": 121.88
+    },
+    {
+      "date": "2026-08-27",
+      "usdGal": 3.42,
+      "fx": 1.39,
+      "bcad": 125.23
+    },
+    {
+      "date": "2026-08-28",
+      "usdGal": 3.527,
+      "fx": 1.39,
+      "bcad": 129.4
+    },
+    {
+      "date": "2026-08-31",
+      "usdGal": 3.55,
+      "fx": 1.39,
+      "bcad": 130.04
+    },
+    {
+      "date": "2026-09-01",
+      "usdGal": 3.203,
+      "fx": 1.39,
+      "bcad": 117.58
     }
   ],
   "notes": {
-    "regulatedMeaning": "NB sets ONE province-wide legal MAXIMUM (ceiling). Fredericton, Nackawic, Oromocto & Saint John share it. Stations price at or just under it.",
+    "regulatedMeaning": "The regulated maximum applies across New Brunswick. Individual station prices may be lower.",
     "schedule": "Set weekly, Fridays 12:01am Atlantic, with a mid-week 'interrupter' on big swings."
   }
 }

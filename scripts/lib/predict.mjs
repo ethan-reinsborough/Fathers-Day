@@ -20,7 +20,9 @@ const addDays = (d, n) => new Date(d.getTime() + n * DAY);
 
 function nextFriday(from) {
   // 0=Sun..5=Fri..6=Sat — first Friday strictly after `from`.
-  const d = new Date(Date.UTC(from.getUTCFullYear(), from.getUTCMonth(), from.getUTCDate()));
+  const d = new Date(
+    Date.UTC(from.getUTCFullYear(), from.getUTCMonth(), from.getUTCDate()),
+  );
   do {
     d.setUTCDate(d.getUTCDate() + 1);
   } while (d.getUTCDay() !== 5);
@@ -61,14 +63,32 @@ export function buildBenchmark(nyHarbor, usdcad) {
  * @param today      Date (scrape time)
  */
 export function predict({ regulated, history, benchmark, today }) {
+  if (
+    !Number.isFinite(regulated.regularSelfServe) ||
+    !history?.series?.length ||
+    benchmark.length < 5
+  )
+    return null;
+  // Never manufacture a fresh forecast from old data or a mismatched baseline.
+  if (
+    today.getTime() - Date.parse(history.latestDate) > 8 * DAY ||
+    today.getTime() - Date.parse(benchmark.at(-1).date) > 7 * DAY
+  )
+    return null;
+  if (
+    Math.abs(regulated.regularSelfServe - history.series.at(-1).regular) > 0.11
+  )
+    return null;
   const effectiveISO = history.latestDate; // the Friday the current price was set
   const D0 = toDate(effectiveISO);
-  const currentMax = regulated.regularSelfServe ?? history.series.at(-1)?.regular;
+  const currentMax =
+    regulated.regularSelfServe ?? history.series.at(-1)?.regular;
   const publishedBench = history.series.at(-1)?.benchmark ?? null;
 
   const bdates = benchmark.map((b) => b.date);
   const latestBenchISO = bdates.at(-1);
-  const inRange = (lo, hi) => benchmark.filter((b) => b.date >= lo && b.date <= hi).map((b) => b.bcad);
+  const inRange = (lo, hi) =>
+    benchmark.filter((b) => b.date >= lo && b.date <= hi).map((b) => b.bcad);
 
   // Window that set the CURRENT price: ~5 weekdays before D0.
   const baseline = inRange(toISO(addDays(D0, -9)), toISO(addDays(D0, -1)));
@@ -89,25 +109,31 @@ export function predict({ regulated, history, benchmark, today }) {
   // Recent daily volatility of the benchmark (c/L/day).
   const diffs = [];
   for (let i = benchmark.length - 11; i < benchmark.length; i++) {
-    if (i > 0 && benchmark[i] && benchmark[i - 1]) diffs.push(benchmark[i].bcad - benchmark[i - 1].bcad);
+    if (i > 0 && benchmark[i] && benchmark[i - 1])
+      diffs.push(benchmark[i].bcad - benchmark[i - 1].bcad);
   }
   const vol = stdev(diffs);
 
   // Band: wide early in the cycle / when volatile, tightening as data arrives.
-  const halfWidth = round1(clamp(0.8 + (1 - observedFraction) * 2.6 + vol * 0.9, 0.8, 6));
+  const halfWidth = round1(
+    clamp(0.8 + (1 - observedFraction) * 2.6 + vol * 0.9, 0.8, 6),
+  );
 
   // Interrupter watch: a big single-day benchmark swing can force an
   // out-of-cycle change (~6 c/L is the reported NB trigger).
   const maxDaySwing = diffs.length ? Math.max(...diffs.map(Math.abs)) : 0;
   const interrupterRisk = Math.abs(deltaCents) >= 6 || maxDaySwing >= 6;
 
-  const direction = deltaCents > 0.15 ? "up" : deltaCents < -0.15 ? "down" : "flat";
+  const direction =
+    deltaCents > 0.15 ? "up" : deltaCents < -0.15 ? "down" : "flat";
 
   // Anchor on the Atlantic calendar date: the NBEUB cycle is defined in
   // America/Moncton, so a run between UTC-midnight Friday and the 12:01am-AT
   // reset is still "last week" until the new xls row publishes. Comparing the
   // raw UTC instant to a UTC-midnight date here would skip a week.
-  const atlISO = today.toLocaleDateString("en-CA", { timeZone: "America/Moncton" });
+  const atlISO = today.toLocaleDateString("en-CA", {
+    timeZone: "America/Moncton",
+  });
   const nextChange = nextFriday(atlISO > effectiveISO ? toDate(atlISO) : D0);
 
   return {
@@ -132,7 +158,8 @@ export function predict({ regulated, history, benchmark, today }) {
       computedRecentCents: round1(recentLevel),
       computedBaselineCents: round1(baselineLevel),
       latestNyHarborDate: latestBenchISO,
-      fixedComponentCents: publishedBench != null ? round1(currentMax - publishedBench) : null,
+      fixedComponentCents:
+        publishedBench != null ? round1(currentMax - publishedBench) : null,
       momentumCents: round1(momentum),
     },
     volatilityCentsPerDay: round2(vol),

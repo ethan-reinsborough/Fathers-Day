@@ -22,9 +22,9 @@ export default defineConfig({
         name: "Gas Guru — NB Fuel Oracle",
         short_name: "Gas Guru",
         description:
-          "New Brunswick regulated gas price tracker and next-change predictor for the Fredericton area.",
-        theme_color: "#0b0b1a",
-        background_color: "#0b0b1a",
+          "Fuel prices, nearby stations and road-trip planning across New Brunswick.",
+        theme_color: "#08110f",
+        background_color: "#08110f",
         display: "standalone",
         orientation: "portrait",
         scope: base,
@@ -57,13 +57,14 @@ export default defineConfig({
         // network first so the app shows fresh prices, fall back to cache offline.
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => url.pathname.endsWith("/data/latest.json") ||
+            urlPattern: ({ url }) =>
+              url.pathname.endsWith("/data/latest.json") ||
               url.pathname.endsWith("/data/history.json") ||
               url.pathname.endsWith("/data/stations.json"),
             handler: "NetworkFirst",
             options: {
-              cacheName: "gas-guru-data",
-              networkTimeoutSeconds: 6,
+              cacheName: "gas-guru-data-v2",
+              networkTimeoutSeconds: 3,
               expiration: { maxEntries: 12, maxAgeSeconds: 60 * 60 * 24 * 14 },
             },
           },

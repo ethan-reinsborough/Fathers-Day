@@ -1,4 +1,5 @@
 export interface Regulated {
+  effectiveDateVerified?: boolean;
   regularSelfServe: number;
   regularFullServe?: number | null;
   midGrade?: number | null;
@@ -72,6 +73,13 @@ export interface History {
 }
 
 export interface Station {
+  stale?: boolean;
+  checkedAt?: string;
+  postedByGrade?: {
+    regular?: string | null;
+    premium?: string | null;
+    diesel?: string | null;
+  };
   id: string;
   name: string;
   brand: string | null;

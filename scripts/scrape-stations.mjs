@@ -19,7 +19,10 @@ import { dirname, resolve } from "node:path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dirname, "..", "public", "data", "stations.json");
 
-const AREAS = (process.env.GG_AREAS || "Fredericton, NB;Oromocto, NB;Nackawic, NB")
+const AREAS = (
+  process.env.GG_AREAS ||
+  "Hanwell, NB;Fredericton, NB;Oromocto, NB;Nackawic, NB;Woodstock, NB;Edmundston, NB;Grand Falls, NB;Saint John, NB;Sussex, NB;Moncton, NB;Shediac, NB;Sackville, NB;Miramichi, NB;Bathurst, NB;Campbellton, NB;Caraquet, NB;Tracadie, NB;St. Stephen, NB;Saint Andrews, NB;Grand Manan, NB;Richibucto, NB;Doaktown, NB;Saint-Quentin, NB"
+)
   .split(";")
   .map((s) => s.trim())
   .filter(Boolean);
@@ -32,8 +35,8 @@ const priceOf = (prices, product) => {
   const v = p?.credit?.price ?? p?.cash?.price ?? null;
   return typeof v === "number" && v > 30 && v < 400 ? v : null; // reject 0 / outliers
 };
-const postedOf = (prices) => {
-  const p = (prices || []).find((x) => x.fuelProduct === "regular_gas") || (prices || [])[0];
+const postedOf = (prices, product = "regular_gas") => {
+  const p = (prices || []).find((x) => x.fuelProduct === product);
   return p?.credit?.postedTime ?? p?.cash?.postedTime ?? null;
 };
 
@@ -48,7 +51,7 @@ function writeStale(reason) {
     generatedAt: new Date().toISOString(),
     area: AREAS.join(" · "),
     source: "GasBuddy",
-    sourceUrl: "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
+    sourceUrl: "https://www.gasbuddy.com/gasprices/canada/new-brunswick",
     stale: true,
     staleReason: reason,
     stations: prev?.stations || [],
@@ -57,11 +60,23 @@ function writeStale(reason) {
   };
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(out, null, 2));
-  console.warn(`stations.json kept STALE (${reason}); ${out.stations.length} cached station(s).`);
+  console.warn(
+    `stations.json kept STALE (${reason}); ${out.stations.length} cached station(s).`,
+  );
 }
 
 async function main() {
+  // Keep a partial scrape from deleting reports for the rest of the province.
+  let previous = [];
+  try {
+    previous = JSON.parse(readFileSync(OUT, "utf8")).stations || [];
+  } catch {}
   const browser = await chromium.launch({ headless: true });
+  const deadline = Date.now() + 8 * 60000;
+  const hardStop = setTimeout(
+    () => void browser.close().catch(() => {}),
+    8 * 60000 + 1000,
+  );
   const ctx = await browser.newContext({ userAgent: UA, locale: "en-CA" });
   const page = await ctx.newPage();
 
@@ -83,11 +98,18 @@ async function main() {
       const regular = priceOf(s.prices, "regular_gas");
       if (regular == null) continue;
       prices.set(id, {
+        checkedAt: new Date().toISOString(),
+        stale: false,
         regular,
         midgrade: priceOf(s.prices, "midgrade_gas"),
         premium: priceOf(s.prices, "premium_gas"),
         diesel: priceOf(s.prices, "diesel"),
         postedAt: postedOf(s.prices),
+        postedByGrade: {
+          regular: postedOf(s.prices),
+          premium: postedOf(s.prices, "premium_gas"),
+          diesel: postedOf(s.prices, "diesel"),
+        },
       });
     }
   });
@@ -128,12 +150,13 @@ async function main() {
   }
 
   for (const area of AREAS) {
+    if (Date.now() >= deadline) break;
     const url = `https://www.gasbuddy.com/home?search=${encodeURIComponent(area)}&fuel=1&method=all`;
     try {
-      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
-      for (let i = 0; i < 12; i++) {
-        if (!/just a moment/i.test(await page.title())) break;
-        await page.waitForTimeout(1500);
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 18000 });
+      if (/just a moment|access denied/i.test(await page.title())) {
+        console.warn("Source access challenge; keeping cached reports.");
+        break;
       }
       await page.waitForTimeout(2500);
       await page.mouse.wheel(0, 3000);
@@ -142,12 +165,15 @@ async function main() {
     } catch (e) {
       console.warn(`  ${area} failed: ${e.message}`);
     }
-    console.log(`searched "${area}" — priced:${prices.size} named:${meta.size}`);
+    console.log(
+      `searched "${area}" — priced:${prices.size} named:${meta.size}`,
+    );
   }
 
   await browser.close();
+  clearTimeout(hardStop);
 
-  const stations = [...prices.entries()]
+  const freshStations = [...prices.entries()]
     .map(([id, p]) => {
       const m = meta.get(id) || {};
       return {
@@ -163,18 +189,24 @@ async function main() {
     })
     .sort((a, b) => a.regular - b.regular);
 
-  if (!stations.length) {
+  if (!freshStations.length) {
     writeStale("no stations captured (Cloudflare block or no data)");
     return;
   }
 
   const now = new Date().toISOString();
+  const stations = [
+    ...freshStations,
+    ...previous
+      .filter((s) => !prices.has(s.id))
+      .map((s) => ({ ...s, stale: true })),
+  ].sort((a, b) => a.regular - b.regular);
   const out = {
     generatedAt: now,
     lastLiveAt: now,
     area: AREAS.join(" · "),
     source: "GasBuddy",
-    sourceUrl: "https://www.gasbuddy.com/gasprices/canada/new-brunswick/fredericton",
+    sourceUrl: "https://www.gasbuddy.com/gasprices/canada/new-brunswick",
     stale: false,
     lowestRegular: stations[0].regular,
     highestRegular: stations[stations.length - 1].regular,
@@ -185,7 +217,7 @@ async function main() {
   writeFileSync(OUT, JSON.stringify(out, null, 2));
   console.log(
     `\n✓ ${stations.length} stations. Cheapest regular: ${out.lowestRegular}¢ ` +
-      `(${stations[0].name}, ${stations[0].locality}).`
+      `(${stations[0].name}, ${stations[0].locality}).`,
   );
 }
 

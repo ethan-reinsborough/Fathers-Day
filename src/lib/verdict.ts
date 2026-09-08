@@ -1,4 +1,5 @@
 import type { Prediction, Stations, Regulated } from "./types";
+import { stationIsOld } from "./freshness.ts";
 
 export type Tone = "good" | "warn" | "neutral";
 
@@ -12,12 +13,16 @@ export interface Verdict {
 export function makeVerdict(
   prediction: Prediction | null,
   stations: Stations | null,
-  regulated: Regulated
+  regulated: Regulated,
 ): Verdict {
   const cheapest =
-    stations && stations.stations.length ? stations.stations[0] : null;
+    stations?.stations
+      .filter((s) => !stationIsOld(s, stations))
+      .sort((a, b) => a.regular - b.regular)[0] ?? null;
   const underCap =
-    cheapest != null ? Math.round((regulated.regularSelfServe - cheapest.regular) * 10) / 10 : null;
+    cheapest != null
+      ? Math.round((regulated.regularSelfServe - cheapest.regular) * 10) / 10
+      : null;
 
   const stationLine =
     cheapest && underCap != null && underCap > 0
