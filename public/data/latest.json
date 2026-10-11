@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-10T20:01:08.759Z",
+  "generatedAt": "2026-10-11T10:47:38.873Z",
   "area": "New Brunswick (province-wide regulated maximum)",
   "regulated": {
     "regularSelfServe": 195.4,
     "regularFullServe": 198.9,
     "midGrade": 214.8,
     "premium": 234.2,
-    "diesel": 277.9,
-    "furnace": 273.7,
+    "diesel": 273.6,
+    "furnace": 269.2,
     "propane": 111.9,
     "source": "NBEUB",
     "sourceUrl": "https://nbeub.ca/current-petroleum-prices-2",
-    "effectiveDate": "2026-10-10",
+    "effectiveDate": "2026-10-11",
     "effectiveDateVerified": true
   },
   "prediction": null,
